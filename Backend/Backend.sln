@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{C9CC4960-6165-4443-B736-ADB6F41503E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_Interface", "REST_Interface\REST_Interface.csproj", "{58B028FC-A9D9-44BB-81DA-0692DA6782D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REST_Interface", "REST_Interface\REST_Interface.csproj", "{58B028FC-A9D9-44BB-81DA-0692DA6782D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{2743CCA7-47FC-4C33-B916-CC55B89E4172}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{58B028FC-A9D9-44BB-81DA-0692DA6782D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58B028FC-A9D9-44BB-81DA-0692DA6782D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58B028FC-A9D9-44BB-81DA-0692DA6782D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2743CCA7-47FC-4C33-B916-CC55B89E4172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2743CCA7-47FC-4C33-B916-CC55B89E4172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2743CCA7-47FC-4C33-B916-CC55B89E4172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2743CCA7-47FC-4C33-B916-CC55B89E4172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

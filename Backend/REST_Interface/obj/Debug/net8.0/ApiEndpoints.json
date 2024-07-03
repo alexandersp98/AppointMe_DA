@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "REST_Interface.Controllers.HomeController",
-    "Method": "GetHello",
-    "RelativePath": "Home",
+    "ContainingType": "REST_Interface.Controllers.EntrepreneurController",
+    "Method": "Get",
+    "RelativePath": "GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Security.Principal;
 
@@ -6,6 +7,7 @@ namespace Persistence
 {
     public class ApplicationDbContext : DbContext
     {
+        public DbSet<Entrepreneur> Entrepreneurs => Set<Entrepreneur>();
 
 
         IConfiguration _config;

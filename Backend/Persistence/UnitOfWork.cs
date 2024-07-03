@@ -11,6 +11,7 @@ namespace Persistence
 
         private ApplicationDbContext _dbContext;
 
+        public IEntrepreneurRepository EntrepreneurRepository { get; }
 
         public UnitOfWork() : this(new ApplicationDbContext())
         { }
@@ -18,6 +19,8 @@ namespace Persistence
         public UnitOfWork(ApplicationDbContext context)
         {
             _dbContext = context;
+
+            EntrepreneurRepository = new EntrepreneurRepository(context);
 
 
         }
@@ -80,8 +83,12 @@ namespace Persistence
             await DeleteDatabaseAsync();
             await MigrateDatabaseAsync();
 
-
+            Entrepreneur entrepreneur = new Entrepreneur() {
+            EMail_Address = "m.mustermann@gmail.com",
+            Password = "123456Ab",
+            UserName = "MusterMaxi"};
             
+            _dbContext.Entrepreneurs.Add(entrepreneur);
 
 
             await SaveChangesAsync();
