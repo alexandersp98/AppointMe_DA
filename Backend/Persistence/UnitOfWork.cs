@@ -8,11 +8,9 @@ namespace Persistence
 {
     public class UnitOfWork : IUnitOfWork
     {
-        const string FILENAME = "games.csv";
 
         private ApplicationDbContext _dbContext;
 
-        public ICustomerRepository CustomerRepository { get;}
 
         public UnitOfWork() : this(new ApplicationDbContext())
         { }
@@ -20,7 +18,6 @@ namespace Persistence
         public UnitOfWork(ApplicationDbContext context)
         {
             _dbContext = context;
-            CustomerRepository = new CustomerRepository(_dbContext);
 
 
         }
@@ -84,26 +81,7 @@ namespace Persistence
             await MigrateDatabaseAsync();
 
 
-            _dbContext.Customers.Add(new Customer()
-            {
-                FirstName = "Max",
-                LastName = "Mustermann",
-                Iban = "0934fajkl39420"
-            });
-
-            _dbContext.Customers.Add(new Customer()
-            {
-                FirstName = "Maria",
-                LastName = "Musterfrau",
-                Iban = "0934faj39420"
-            });
-
-            _dbContext.Customers.Add(new Customer()
-            {
-                FirstName = "Franz",
-                LastName = "Amann",
-                Iban = "asdf32gaf"
-            });
+            
 
 
             await SaveChangesAsync();

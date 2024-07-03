@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "REST_Interface.Controllers.HomeController",
+    "Method": "GetHello",
+    "RelativePath": "Home",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -13,6 +13,7 @@ export class AppComponent {
   constructor(public service: TestService){
 
 
+    service.GetHello();
 
 
 

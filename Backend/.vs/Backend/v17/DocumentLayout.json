@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Backend\\",
+  "WorkspaceRootPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\backend\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +46,7 @@
         },
         {
           "DockedWidth": 51,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,14 +57,57 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Persistence\\UnitOfWork.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\UnitOfWork.cs",
+              "RelativeToolTip": "Persistence\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T12:38:23.267Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Program.cs",
+              "RelativeDocumentMoniker": "REST_Interface\\Program.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Program.cs",
+              "RelativeToolTip": "REST_Interface\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T12:36:44.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\appsettings.json",
+              "RelativeDocumentMoniker": "REST_Interface\\appsettings.json",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\appsettings.json",
+              "RelativeToolTip": "REST_Interface\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-03T12:35:48.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Backend\\Persistence\\ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\ApplicationDBContext.cs",
               "RelativeDocumentMoniker": "Persistence\\ApplicationDBContext.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Backend\\Persistence\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\ApplicationDBContext.cs",
               "RelativeToolTip": "Persistence\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-03T12:16:58.403Z",
               "EditorCaption": ""

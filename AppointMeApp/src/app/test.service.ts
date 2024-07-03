@@ -7,7 +7,7 @@ import { Test } from './test';
 })
 export class TestService {
 
-  url: string = 'https://localhost:7068/Home'
+  url: string = 'https://localhost:7161/Home'
 
 
 
