@@ -13,6 +13,11 @@ namespace Persistence
             this._context = context;
         }
 
+        public void Add(Entrepreneur entrepreneur)
+        {
+            _context.Entrepreneurs.Add(entrepreneur);
+        }
+
         public async Task<List<Entrepreneur>> GetAllAsync()
         {
             return await _context.Entrepreneurs.OrderBy(e => e.UserName)

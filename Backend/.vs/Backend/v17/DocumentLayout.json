@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2743CCA7-47FC-4C33-B916-CC55B89E4172}|ConsoleApp\\ConsoleApp.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2743CCA7-47FC-4C33-B916-CC55B89E4172}|ConsoleApp\\ConsoleApp.csproj|solutionrelative:consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\entrepreneurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\entrepreneurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\controllers\\entrepreneurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\entrepreneurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Persistence\\UnitOfWork.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\UnitOfWork.cs",
+              "RelativeToolTip": "Persistence\\UnitOfWork.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAjwGYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:42:14.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\ConsoleApp\\Program.cs",
+              "RelativeToolTip": "ConsoleApp\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAnwBsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:36:58.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Entrepreneur.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Entrepreneur.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Entrepreneur.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Entrepreneur.cs",
+              "RelativeToolTip": "Core\\Entities\\Entrepreneur.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAewBMAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:35:41.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EntrepreneurController.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\EntrepreneurController.cs",
+              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\EntrepreneurController.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\EntrepreneurController.cs",
+              "RelativeToolTip": "REST_Interface\\Controllers\\EntrepreneurController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T17:07:04.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EntrepreneurRepository.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\EntrepreneurRepository.cs",
+              "RelativeDocumentMoniker": "Persistence\\EntrepreneurRepository.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\EntrepreneurRepository.cs",
+              "RelativeToolTip": "Persistence\\EntrepreneurRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T17:08:00.043Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -33,11 +119,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

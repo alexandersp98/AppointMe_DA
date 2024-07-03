@@ -52,6 +52,30 @@ namespace Persistence
 
         private void ValidateEntity(object entity)
         {       
+            if(entity is Entrepreneur entrepreneur)
+            {
+                if(_dbContext.Entrepreneurs.Any(e => e.UserName == entrepreneur.UserName && e.Id != entrepreneur.Id))
+                {
+
+                    throw new ValidationException(new ValidationResult($"The username {entrepreneur.UserName} already exists."
+                        , new List<string> { nameof(Entrepreneur.UserName) }), null, null);
+
+
+                }
+
+                if (_dbContext.Entrepreneurs.Any(e => e.EMail_Address == entrepreneur.EMail_Address && e.Id != entrepreneur.Id))
+                {
+
+                    throw new ValidationException(new ValidationResult($"The E-Mail address {entrepreneur.EMail_Address} already exists."
+                        , new List<string> { nameof(Entrepreneur.EMail_Address) }), null, null);
+
+
+                }
+
+
+            }
+
+
            
         }
 
