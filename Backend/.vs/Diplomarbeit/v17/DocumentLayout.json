@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21F53E2C-D58F-4CA3-B6DE-83D075108762}|REST-Schnittstelle\\REST-Schnittstelle.csproj|c:\\mein_privater_ordner\\schule\\diplom\\diplomarbeit\\rest-schnittstelle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F53E2C-D58F-4CA3-B6DE-83D075108762}|REST-Schnittstelle\\REST-Schnittstelle.csproj|solutionrelative:rest-schnittstelle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21F53E2C-D58F-4CA3-B6DE-83D075108762}|REST-Schnittstelle\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\diplomarbeit\\rest-schnittstelle\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21F53E2C-D58F-4CA3-B6DE-83D075108762}|REST-Schnittstelle\\REST_Interface.csproj|solutionrelative:rest-schnittstelle\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\diplomarbeit\\core\\entities\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\diplomarbeit\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\diplomarbeit\\core\\entities\\entityobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\entityobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\diplomarbeit\\core\\contracts\\ientityobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\contracts\\ientityobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 51,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 51,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\REST-Schnittstelle\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "REST-Schnittstelle\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\REST-Schnittstelle\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "REST-Schnittstelle\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T16:50:14.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Core\\Entities\\Test.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Test.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Core\\Entities\\Test.cs",
+              "RelativeToolTip": "Core\\Entities\\Test.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T16:45:57.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\REST-Schnittstelle\\Program.cs",
+              "RelativeDocumentMoniker": "REST-Schnittstelle\\Program.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\REST-Schnittstelle\\Program.cs",
+              "RelativeToolTip": "REST-Schnittstelle\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T15:22:21.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Persistence\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Persistence\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Persistence\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Persistence\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T15:42:32.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEntityObject.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Core\\Contracts\\IEntityObject.cs",
+              "RelativeDocumentMoniker": "Core\\Contracts\\IEntityObject.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Core\\Contracts\\IEntityObject.cs",
+              "RelativeToolTip": "Core\\Contracts\\IEntityObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T15:40:36.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EntityObject.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Core\\Entities\\EntityObject.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\EntityObject.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Diplomarbeit\\Core\\Entities\\EntityObject.cs",
+              "RelativeToolTip": "Core\\Entities\\EntityObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T15:38:04.604Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

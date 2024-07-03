@@ -1,0 +1,14 @@
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\bin\Debug\net8.0\Core.deps.json
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\bin\Debug\net8.0\Core.runtimeconfig.json
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\bin\Debug\net8.0\Core.dll
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\bin\Debug\net8.0\Core.pdb
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.dll
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\refint\Core.dll
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.pdb
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\Core.genruntimeconfig.cache
+C:\Mein_privater_Ordner\Schule\Diplom\Diplomarbeit\Core\obj\Debug\net8.0\ref\Core.dll
