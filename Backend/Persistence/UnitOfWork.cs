@@ -19,7 +19,7 @@ namespace Persistence
 
         public IMessageRepository MessageRepository { get; }
 
-        public ICalendarRepository CalendarRepository {  get; }
+        public IAppointmentRepository AppointmentRepository {  get; }
 
         public UnitOfWork() : this(new ApplicationDbContext())
         { }
@@ -32,7 +32,7 @@ namespace Persistence
             CustomerRepository = new CustomerRepository(context);
             ChatRepository = new ChatRepository(context);
             MessageRepository = new MessageRepository(context);
-            CalendarRepository = new CalendarRepository(context);
+            AppointmentRepository = new AppointmentRepository(context);
         }
 
         public UnitOfWork(IConfiguration configuration) : this(new ApplicationDbContext(configuration))

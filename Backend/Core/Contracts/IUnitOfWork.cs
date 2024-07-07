@@ -13,7 +13,7 @@ namespace Core.Contracts
 
         IMessageRepository MessageRepository { get; }
 
-        ICalendarRepository CalendarRepository { get; }
+        IAppointmentRepository AppointmentRepository { get; }
 
         Task<int> SaveChangesAsync();
         Task DeleteDatabaseAsync();

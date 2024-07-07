@@ -6,10 +6,11 @@ namespace Core.Contracts
     {
         void Add(Customer customer);
 
-        Task Delete(int customerId);
+        void Delete(Customer customerToDelete);
 
         Task<List<Customer>> GetAllAsync();
 
+        Task<Customer?> GetById(int customerId);
 
     }
 }

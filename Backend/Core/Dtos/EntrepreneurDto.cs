@@ -10,6 +10,8 @@ namespace Core.Dtos
 {
     public class EntrepreneurDto
     {
+
+        public int Id { get; set; }
         public string UserName { get; set; } = string.Empty;
 
         public string EMail_Address { get; set; } = string.Empty;

@@ -6,8 +6,11 @@ namespace Core.Contracts
     {
         void Add(Entrepreneur entrepreneur);
 
-        Task Delete(int entrepreunerId);
+        void Delete(Entrepreneur entrepreneurToDelete);
 
         Task<List<Entrepreneur>> GetAllAsync();
+
+        Task<Entrepreneur?> GetById(int entrepreneurId);
+
     }
 }

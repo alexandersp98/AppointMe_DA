@@ -9,7 +9,7 @@ namespace Persistence
     {
         public DbSet<Entrepreneur> Entrepreneurs => Set<Entrepreneur>();
 
-        public DbSet<Calendar> Calendars => Set<Calendar>();
+        public DbSet<Appointment> Appointments => Set<Appointment>();
 
         public DbSet<Message> Messages => Set<Message>();
 

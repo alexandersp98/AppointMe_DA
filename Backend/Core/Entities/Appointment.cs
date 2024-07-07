@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Calendar : EntityObject
+    public class Appointment : EntityObject
     {
-        public DateTime Appointment { get; set; }
+        public DateTime Appointment_Date { get; set; }
 
         [ForeignKey(nameof(Customer_Id))]
         public Customer? Customer { get; set; }

@@ -18,21 +18,19 @@ namespace Persistence
             _context.Chats.Add(chat);
         }
 
-        public async Task Delete(int chatId)
+        public void Delete(Chat chatToDelete)
         {
-            Chat? chatToRemove = await _context.Chats.Where(c => c.Id == chatId).FirstOrDefaultAsync();
-        
-        
-            if (chatToRemove != null)
-            {
-                _context.Chats.Remove(chatToRemove);
-            }
-        
+            _context.Chats.Remove(chatToDelete);
         }
 
         public async Task<List<Chat>> GetAllAsync()
         {
             return await _context.Chats.OrderBy(c => c.Entrepreneur_Id).ToListAsync();
+        }
+
+        public async Task<Chat?> GetById(int chatId)
+        {
+            return await _context.Chats.Where(c => c.Id == chatId).FirstOrDefaultAsync();
         }
     }
 }

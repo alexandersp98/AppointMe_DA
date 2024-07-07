@@ -18,20 +18,19 @@ namespace Persistence
             _context.Customers.Add(customer);
         }
 
-        public async Task Delete(int customerId)
+        public void Delete(Customer customerToDelete)
         {
-            Customer? customerToRemove = await _context.Customers.Where(c => c.Id == customerId).FirstOrDefaultAsync();
-
-            if(customerToRemove != null)
-            {
-                _context.Customers.Remove(customerToRemove);
-            }
-
+            _context.Customers.Remove(customerToDelete);
         }
 
         public async Task<List<Customer>> GetAllAsync()
         {
             return await _context.Customers.OrderBy(c => c.LastName).ToListAsync();
+        }
+
+        public async Task<Customer?> GetById(int customerId)
+        {
+            return await  _context.Customers.Where(c => c.Id == customerId).FirstOrDefaultAsync();
         }
     }
 }

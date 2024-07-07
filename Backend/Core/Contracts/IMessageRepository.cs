@@ -7,10 +7,11 @@ namespace Core.Contracts
 
         void Add(Message message);
 
-        Task Delete(int messageId);
+        void Delete(Message messageToDelete);
 
         Task<List<Message>> GetAllAsync();
 
+        Task<Message?> GetById(int messageId);
 
     }
 }
