@@ -13,6 +13,14 @@ namespace Persistence
 
         public IEntrepreneurRepository EntrepreneurRepository { get; }
 
+        public ICustomerRepository CustomerRepository { get; }
+
+        public IChatRepository ChatRepository { get; }
+
+        public IMessageRepository MessageRepository { get; }
+
+        public ICalendarRepository CalendarRepository {  get; }
+
         public UnitOfWork() : this(new ApplicationDbContext())
         { }
 
@@ -21,8 +29,10 @@ namespace Persistence
             _dbContext = context;
 
             EntrepreneurRepository = new EntrepreneurRepository(context);
-
-
+            CustomerRepository = new CustomerRepository(context);
+            ChatRepository = new ChatRepository(context);
+            MessageRepository = new MessageRepository(context);
+            CalendarRepository = new CalendarRepository(context);
         }
 
         public UnitOfWork(IConfiguration configuration) : this(new ApplicationDbContext(configuration))

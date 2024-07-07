@@ -9,6 +9,15 @@ namespace Persistence
     {
         public DbSet<Entrepreneur> Entrepreneurs => Set<Entrepreneur>();
 
+        public DbSet<Calendar> Calendars => Set<Calendar>();
+
+        public DbSet<Message> Messages => Set<Message>();
+
+        public DbSet<Chat> Chats => Set<Chat>();
+
+        public DbSet<Customer> Customers => Set<Customer>();
+
+
 
         IConfiguration _config;
 
