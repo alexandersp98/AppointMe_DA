@@ -25,7 +25,7 @@ namespace Persistence
 
         public async Task<List<Chat>> GetAllAsync()
         {
-            return await _context.Chats.OrderBy(c => c.Entrepreneur_Id).ToListAsync();
+            return await _context.Chats.OrderBy(c => c.Business_Id).ToListAsync();
         }
 
         public async Task<Chat?> GetById(int chatId)

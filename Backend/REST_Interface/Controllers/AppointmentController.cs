@@ -18,7 +18,7 @@ namespace REST_Interface.Controllers
         }
 
 
-        [HttpGet("/GetAll")]
+        [HttpGet("/GetAllAppointments")]
         public async Task<IActionResult> Get()
         {
             List<Appointment> appointments = await _uow.AppointmentRepository.GetAllAsync();
@@ -29,9 +29,11 @@ namespace REST_Interface.Controllers
             {
                 appointmentDtos.Add(new AppointmentDto()
                 {
-                   Description = app.Description,
-                   Appointment_Date = app.Appointment_Date,
-                   
+                    Id = app.Id,
+
+                    Description = app.Description,
+                    Appointment_Date = app.Appointment_Date,
+
 
                 });
 

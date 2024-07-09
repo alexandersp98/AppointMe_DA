@@ -14,7 +14,7 @@ namespace ConsoleApp
             using IUnitOfWork uow = new UnitOfWork();
 
 
-            Entrepreneur ent = new Entrepreneur()
+            Business ent = new Business()
             {
                 EMail_Address = "m.mustermann@gmail.net",
                 Password = "123456Ab",
@@ -28,7 +28,7 @@ namespace ConsoleApp
             if (Validator.TryValidateObject(ent, new ValidationContext(ent), res, true))
             {
 
-                uow.EntrepreneurRepository.Add(ent);
+                uow.BusinessRepository.Add(ent);
 
                 await uow.SaveChangesAsync();
 

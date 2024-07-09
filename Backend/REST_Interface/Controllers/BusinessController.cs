@@ -2,52 +2,55 @@
 using Core.Dtos;
 using Core.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Persistence;
 using System.ComponentModel.DataAnnotations;
 
 namespace REST_Interface.Controllers
 {
-
     [ApiController]
     [Route("[controller]")]
-    public class ChatController : Controller
+    public class BusinessController : Controller
     {
+
         IUnitOfWork _uow;
 
-        public ChatController(IUnitOfWork uow)
+        public BusinessController(IUnitOfWork uow)
         {
             _uow = uow;
         }
 
-        [HttpGet("/GetAllChats")]
+
+        [HttpGet("/GetAllBusinesses")]
         public async Task<IActionResult> Get()
         {
-            List<Chat> chats = await _uow.ChatRepository.GetAllAsync();
+            List<Business> businesses = await _uow.BusinessRepository.GetAllAsync();
 
-            List<ChatDto> chatDto = new List<ChatDto>();
+            List<BusinessDto> businessDtos = new List<BusinessDto>();
 
-            foreach (Chat chat in chats)
+            foreach (Business business in businesses)
             {
-                chatDto.Add(new ChatDto()
+                businessDtos.Add(new BusinessDto()
                 {
-                    Id = chat.Id,
-                    Customer_Id = chat.Customer_Id,
-                    Entrepreneur_Id = chat.Business_Id,
+                    Id = business.Id,
+                    UserName = business.UserName,
+                    EMail_Address = business.EMail_Address,
+                    Password = business.Password
                 });
 
             }
 
-            return Ok(chatDto);
+            return Ok(businessDtos);
 
 
 
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Chat newChat)
+        public async Task<IActionResult> Post(Business newEntrepreneur)
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(newChat, new ValidationContext(newChat), results))
+            if (!Validator.TryValidateObject(newEntrepreneur, new ValidationContext(newEntrepreneur), results))
             {
                 string errorMessages = "";
 
@@ -62,7 +65,7 @@ namespace REST_Interface.Controllers
 
             try
             {
-                _uow.ChatRepository.Add(newChat);
+                _uow.BusinessRepository.Add(newEntrepreneur);
 
                 await _uow.SaveChangesAsync();
 
@@ -82,11 +85,11 @@ namespace REST_Interface.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int chatId)
+        public async Task<IActionResult> Delete(int businessId)
         {
-            Chat? chatToDelete = await _uow.ChatRepository.GetById(chatId);
+            Business? businessToDelete = await _uow.BusinessRepository.GetById(businessId);
 
-            if (chatToDelete == null)
+            if (businessToDelete == null)
             {
                 return BadRequest("invalid Id");
 
@@ -94,7 +97,7 @@ namespace REST_Interface.Controllers
 
             else
             {
-                _uow.ChatRepository.Delete(chatToDelete);
+                _uow.BusinessRepository.Delete(businessToDelete);
 
                 await _uow.SaveChangesAsync();
 
@@ -103,5 +106,8 @@ namespace REST_Interface.Controllers
 
 
         }
+
+
+
     }
 }

@@ -10,13 +10,13 @@ namespace Core.Dtos
 {
     public class ChatDto
     {
-
+        public int Id { get; set; }
         public Customer? Customer { get; set; }
 
-        public Entrepreneur? Entrepreneur { get; set; }
+        public Business? Entrepreneur { get; set; }
 
-        public int Entrepreneur_Id { get; set; }
+        public int? Entrepreneur_Id { get; set; }
 
-        public int Customer_Id { get; set; }
+        public int? Customer_Id { get; set; }
     }
 }

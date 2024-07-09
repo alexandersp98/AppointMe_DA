@@ -6,7 +6,7 @@ namespace Core.Contracts
     public interface IUnitOfWork : IAsyncDisposable, IDisposable
     {
 
-        IEntrepreneurRepository EntrepreneurRepository { get; }
+        IBusinessRepository BusinessRepository { get; }
         ICustomerRepository CustomerRepository { get; }
 
         IChatRepository ChatRepository { get; }

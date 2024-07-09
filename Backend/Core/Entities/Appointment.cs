@@ -15,17 +15,18 @@ namespace Core.Entities
         [ForeignKey(nameof(Customer_Id))]
         public Customer? Customer { get; set; }
 
-        [ForeignKey(nameof(Entrepreneur_Id))]
-        public Entrepreneur? Entrepreneur { get; set; }
+        
+        [ForeignKey(nameof(Business_Id))]
+        public Business? Business { get; set; }
 
 
-        [StringLength(100)]
+        [StringLength(300)]
         public string Description { get; set; } = string.Empty;
 
 
-        public int Customer_Id { get; set; }
+        public int? Customer_Id { get; set; }
 
-        public int Entrepreneur_Id { get; set; }
+        public int? Business_Id { get; set; }
     }
 
 }

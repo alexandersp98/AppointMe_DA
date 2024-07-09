@@ -1,12 +1,212 @@
 [
   {
-    "ContainingType": "REST_Interface.Controllers.EntrepreneurController",
+    "ContainingType": "REST_Interface.Controllers.AppointmentController",
+    "Method": "Post",
+    "RelativePath": "Appointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newAppointment",
+        "Type": "Core.Entities.Appointment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.AppointmentController",
+    "Method": "Delete",
+    "RelativePath": "Appointment",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.BusinessController",
+    "Method": "Post",
+    "RelativePath": "Business",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newEntrepreneur",
+        "Type": "Core.Entities.Entrepreneur",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.BusinessController",
+    "Method": "Delete",
+    "RelativePath": "Business",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entrepreneurId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.ChatController",
+    "Method": "Post",
+    "RelativePath": "Chat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newChat",
+        "Type": "Core.Entities.Chat",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.ChatController",
+    "Method": "Delete",
+    "RelativePath": "Chat",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.CustomerController",
+    "Method": "Post",
+    "RelativePath": "Customer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCustomer",
+        "Type": "Core.Entities.Customer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.CustomerController",
+    "Method": "Delete",
+    "RelativePath": "Customer",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.AppointmentController",
     "Method": "Get",
-    "RelativePath": "GetAll",
+    "RelativePath": "GetAllAppointments",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.BusinessController",
+    "Method": "Get",
+    "RelativePath": "GetAllBusinesses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.ChatController",
+    "Method": "Get",
+    "RelativePath": "GetAllChats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.CustomerController",
+    "Method": "Get",
+    "RelativePath": "GetAllCustomers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.MessageController",
+    "Method": "Get",
+    "RelativePath": "GetAllMessages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.MessageController",
+    "Method": "Post",
+    "RelativePath": "Message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newMessage",
+        "Type": "Core.Entities.Message",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.MessageController",
+    "Method": "Delete",
+    "RelativePath": "Message",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

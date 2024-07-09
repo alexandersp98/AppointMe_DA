@@ -12,7 +12,7 @@ namespace Core.Entities
         [ForeignKey(nameof(Chat_Id))]
         public Chat? Chat { get; set; }
 
-        public int Chat_Id { get; set; }
+        public int? Chat_Id { get; set; }
 
 
 

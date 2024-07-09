@@ -18,7 +18,7 @@ namespace REST_Interface.Controllers
             _uow = uow;
         }
 
-        [HttpGet("/GetAll")]
+        [HttpGet("/GetAllMessages")]
         public async Task<IActionResult> Get()
         {
             List<Message> messages = await _uow.MessageRepository.GetAllAsync();
@@ -29,6 +29,7 @@ namespace REST_Interface.Controllers
             {
                 messageDtos.Add(new MessageDto()
                 {
+                    Id = message.Id,
                     Chat_Id = message.Chat_Id,
                     Text = message.Text,
                 });

@@ -11,7 +11,7 @@ namespace Persistence
 
         private ApplicationDbContext _dbContext;
 
-        public IEntrepreneurRepository EntrepreneurRepository { get; }
+        public IBusinessRepository BusinessRepository { get; }
 
         public ICustomerRepository CustomerRepository { get; }
 
@@ -28,7 +28,7 @@ namespace Persistence
         {
             _dbContext = context;
 
-            EntrepreneurRepository = new EntrepreneurRepository(context);
+            BusinessRepository = new BusinessRepository(context);
             CustomerRepository = new CustomerRepository(context);
             ChatRepository = new ChatRepository(context);
             MessageRepository = new MessageRepository(context);
@@ -62,26 +62,37 @@ namespace Persistence
 
         private void ValidateEntity(object entity)
         {       
-            if(entity is Entrepreneur entrepreneur)
+            if(entity is Business entrepreneur)
             {
-                if(_dbContext.Entrepreneurs.Any(e => e.UserName == entrepreneur.UserName && e.Id != entrepreneur.Id))
+                if(_dbContext.Businesses.Any(e => e.UserName == entrepreneur.UserName && e.Id != entrepreneur.Id))
                 {
 
                     throw new ValidationException(new ValidationResult($"The username {entrepreneur.UserName} already exists."
-                        , new List<string> { nameof(Entrepreneur.UserName) }), null, null);
+                        , new List<string> { nameof(Business.UserName) }), null, null);
 
 
                 }
 
-                if (_dbContext.Entrepreneurs.Any(e => e.EMail_Address == entrepreneur.EMail_Address && e.Id != entrepreneur.Id))
+                if (_dbContext.Businesses.Any(e => e.EMail_Address == entrepreneur.EMail_Address && e.Id != entrepreneur.Id))
                 {
 
                     throw new ValidationException(new ValidationResult($"The E-Mail address {entrepreneur.EMail_Address} already exists."
-                        , new List<string> { nameof(Entrepreneur.EMail_Address) }), null, null);
+                        , new List<string> { nameof(Business.EMail_Address) }), null, null);
 
 
                 }
 
+
+            }
+
+            if(entity is Customer customerToValidate)
+            {
+                if(_dbContext.Customers.Any(c => c.E_Mail_Address == customerToValidate.E_Mail_Address && customerToValidate.Id != c.Id))
+                {
+                    throw new ValidationException(new ValidationResult($"The E-Mail address {customerToValidate.E_Mail_Address} already exists."
+                        , new List<string> { nameof(Customer.E_Mail_Address) }), null, null);
+
+                }
 
             }
 
@@ -117,12 +128,12 @@ namespace Persistence
             await DeleteDatabaseAsync();
             await MigrateDatabaseAsync();
 
-            Entrepreneur entrepreneur = new Entrepreneur() {
+            Business entrepreneur = new Business() {
             EMail_Address = "m.mustermann@gmail.com",
             Password = "123456Ab",
             UserName = "MusterMaxi"};
             
-            _dbContext.Entrepreneurs.Add(entrepreneur);
+            _dbContext.Businesses.Add(entrepreneur);
 
 
             await SaveChangesAsync();

@@ -18,7 +18,7 @@ namespace REST_Interface.Controllers
             _uow = uow;
         }
 
-        [HttpGet("/GetAll")]
+        [HttpGet("/GetAllCustomers")]
         public async Task<IActionResult> Get()
         {
             List<Customer> customers = await _uow.CustomerRepository.GetAllAsync();
@@ -29,12 +29,14 @@ namespace REST_Interface.Controllers
             {
                 customerDtos.Add(new CustomerDto()
                 {
+                    Id = cust.Id,
+
                     CustomerDemand = cust.CustomerDemand,
                     E_Mail_Address = cust.E_Mail_Address,
                     FirstName = cust.FirstName,
                     LastName = cust.LastName,
                     PhoneNumber = cust.PhoneNumber,
-                    Entrepreneur_Id = cust.Entrepreneur_Id
+                    Entrepreneur_Id = cust.Business_Id
 
                 });
 

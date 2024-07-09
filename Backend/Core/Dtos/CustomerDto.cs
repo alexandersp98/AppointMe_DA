@@ -11,7 +11,7 @@ namespace Core.Dtos
 {
     public class CustomerDto
     {
-
+        public int Id { get; set; }
         public string FirstName { get; set; } = string.Empty;
 
 
@@ -27,9 +27,9 @@ namespace Core.Dtos
         public string CustomerDemand { get; set; } = string.Empty;
 
 
-        public Entrepreneur? Entrepreneur { get; set; }
+        public Business? Entrepreneur { get; set; }
 
 
-        public int Entrepreneur_Id { get; set; }
+        public int? Entrepreneur_Id { get; set; }
     }
 }

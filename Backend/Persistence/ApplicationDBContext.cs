@@ -7,7 +7,7 @@ namespace Persistence
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<Entrepreneur> Entrepreneurs => Set<Entrepreneur>();
+        public DbSet<Business> Businesses => Set<Business>();
 
         public DbSet<Appointment> Appointments => Set<Appointment>();
 

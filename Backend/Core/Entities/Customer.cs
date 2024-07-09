@@ -27,16 +27,15 @@ namespace Core.Entities
         [RegularExpression("^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$")]
         public string PhoneNumber { get; set; } = string.Empty;
 
-        
+
         public string CustomerDemand { get; set; } = string.Empty;
 
 
-        [Required]
-        [ForeignKey(nameof(Entrepreneur_Id))]
-        public Entrepreneur? Entrepreneur { get; set; }
+        [ForeignKey(nameof(Business_Id))]
+        public Business? Business { get; set; }
 
 
-        public int Entrepreneur_Id { get; set; }
+        public int? Business_Id { get; set; }
 
     }
 }
