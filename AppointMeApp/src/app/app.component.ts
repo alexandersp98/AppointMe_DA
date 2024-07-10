@@ -1,24 +1,17 @@
 import { Component } from '@angular/core';
-import { TestService } from './test.service';
+import { RouterOutlet } from '@angular/router';
+import { LoginComponent } from "./components/login/login.component";
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, LoginComponent],
   templateUrl: './app.component.html',
-  styles: []
+  styleUrl: './app.component.scss'
 })
+
+
 export class AppComponent {
-  title = 'AppointMeApp';
-
-
-  constructor(public service: TestService){
-
-
-    service.GetHello();
-
-
-
-  }
-
-
-
+  title = 'AppointMe';
+  
 }

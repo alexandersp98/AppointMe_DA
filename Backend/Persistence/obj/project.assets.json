@@ -4430,19 +4430,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Startklar\\.nuget\\packages\\": {}
+    "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
-      "packagesPath": "C:\\Users\\Startklar\\.nuget\\packages\\",
-      "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\obj\\",
+      "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
+      "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Startklar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4456,8 +4456,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
-              "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Core.csproj"
+            "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj"
             }
           }
         }
@@ -4512,7 +4512,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
