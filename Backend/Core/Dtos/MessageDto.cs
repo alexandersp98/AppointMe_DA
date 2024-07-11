@@ -17,5 +17,10 @@ namespace Core.Dtos
 
         public string Text { get; set; } = string.Empty;
 
+        public bool BusinessIsWriter { get; set; }
+
+        public DateTime SendTime { get; set; }
+
+
     }
 }

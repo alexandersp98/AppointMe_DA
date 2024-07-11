@@ -14,10 +14,11 @@ namespace Core.Entities
 
         public int? Chat_Id { get; set; }
 
-
+        public bool BusinessIsWriter { get; set; }
 
         public string Text { get; set; } = string.Empty;
 
+        public DateTime SendTime { get; set; }
 
     }
 }

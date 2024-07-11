@@ -20,7 +20,7 @@ namespace Persistence.Migrations
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EMail_Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RowType = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                    RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -37,9 +37,8 @@ namespace Persistence.Migrations
                     LastName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     E_Mail_Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CustomerDemand = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Business_Id = table.Column<int>(type: "int", nullable: true),
-                    RowType = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                    RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -61,7 +60,7 @@ namespace Persistence.Migrations
                     Description = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
                     Customer_Id = table.Column<int>(type: "int", nullable: true),
                     Business_Id = table.Column<int>(type: "int", nullable: true),
-                    RowType = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                    RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -86,7 +85,7 @@ namespace Persistence.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Business_Id = table.Column<int>(type: "int", nullable: true),
                     Customer_Id = table.Column<int>(type: "int", nullable: true),
-                    RowType = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                    RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -110,8 +109,10 @@ namespace Persistence.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Chat_Id = table.Column<int>(type: "int", nullable: true),
+                    BusinessIsWriter = table.Column<bool>(type: "bit", nullable: false),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RowType = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                    SendTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>
                 {

@@ -3,100 +3,27 @@
   "WorkspaceRootPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Businesses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\businessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\businessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Chats.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\contracts\\ibusinessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\contracts\\ibusinessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Customers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\controllers\\businesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\businesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Messages.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Appointments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\businessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\businessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\contracts\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\contracts\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|solutionrelative:persistence\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\validations\\passwordvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\validations\\passwordvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\entityobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\entityobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\chatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\chatdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DBE721A-0627-4371-8DC8-E57E7F27D707}|Persistence\\Persistence.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\persistence\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,8 +36,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 205,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,327 +45,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BusinessRepository.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\BusinessRepository.cs",
-              "RelativeDocumentMoniker": "Persistence\\BusinessRepository.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\BusinessRepository.cs",
-              "RelativeToolTip": "Persistence\\BusinessRepository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA1wBsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:52:04.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BusinessDto.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\BusinessDto.cs",
-              "RelativeDocumentMoniker": "Core\\Dtos\\BusinessDto.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\BusinessDto.cs",
-              "RelativeToolTip": "Core\\Dtos\\BusinessDto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:48:20.45Z",
+              "DocumentIndex": 4,
+              "Title": "dbo.Appointments [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Appointments.sql",
+              "ToolTip": "dbo.Appointments [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-11T15:25:23.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BusinessController.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\BusinessController.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\BusinessController.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\BusinessController.cs",
-              "RelativeToolTip": "REST_Interface\\Controllers\\BusinessController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAgwFkAAABZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:37:44.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Program.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Program.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Program.cs",
-              "RelativeToolTip": "REST_Interface\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:40:42.186Z",
+              "Title": "dbo.Messages [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Messages.sql",
+              "ToolTip": "dbo.Messages [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-11T16:10:17.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IBusinessRepository.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Contracts\\IBusinessRepository.cs",
-              "RelativeDocumentMoniker": "Core\\Contracts\\IBusinessRepository.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Contracts\\IBusinessRepository.cs",
-              "RelativeToolTip": "Core\\Contracts\\IBusinessRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:47:24.011Z",
+              "Title": "dbo.Customers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Customers.sql",
+              "ToolTip": "dbo.Customers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-11T15:28:47.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Chats [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Chats.sql",
+              "ToolTip": "dbo.Chats [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-11T15:25:57.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Business.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Business.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Business.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Business.cs",
-              "RelativeToolTip": "Core\\Entities\\Business.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:00:20.018Z",
+              "Title": "dbo.Businesses [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Businesses.sql",
+              "ToolTip": "dbo.Businesses [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-11T14:32:27.469Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Contracts\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "Core\\Contracts\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Contracts\\IUnitOfWork.cs",
-              "RelativeToolTip": "Core\\Contracts\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:54:57.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "Persistence\\UnitOfWork.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\UnitOfWork.cs",
-              "RelativeToolTip": "Persistence\\UnitOfWork.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAFwAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T10:52:29.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "Persistence\\ApplicationDBContext.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\ApplicationDBContext.cs",
-              "RelativeToolTip": "Persistence\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:54:29.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppointmentRepository.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\AppointmentRepository.cs",
-              "RelativeDocumentMoniker": "Persistence\\AppointmentRepository.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\AppointmentRepository.cs",
-              "RelativeToolTip": "Persistence\\AppointmentRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:52:18.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PasswordValidation.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Validations\\PasswordValidation.cs",
-              "RelativeDocumentMoniker": "Core\\Validations\\PasswordValidation.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Validations\\PasswordValidation.cs",
-              "RelativeToolTip": "Core\\Validations\\PasswordValidation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:49:50.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "MessageDto.cs",
               "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\MessageDto.cs",
               "RelativeDocumentMoniker": "Core\\Dtos\\MessageDto.cs",
               "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\MessageDto.cs",
               "RelativeToolTip": "Core\\Dtos\\MessageDto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAATAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:21:24.097Z",
+              "WhenOpened": "2024-07-11T16:00:42.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Appointment.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Appointment.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Appointment.cs",
-              "RelativeToolTip": "Core\\Entities\\Appointment.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBwAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:00:16.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Chat.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Chat.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Chat.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Chat.cs",
-              "RelativeToolTip": "Core\\Entities\\Chat.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:00:17.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Customer.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Customer.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Customer.cs",
-              "RelativeToolTip": "Core\\Entities\\Customer.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA3wCUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T11:06:50.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EntityObject.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\EntityObject.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\EntityObject.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\EntityObject.cs",
-              "RelativeToolTip": "Core\\Entities\\EntityObject.cs",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Program.cs",
+              "RelativeDocumentMoniker": "REST_Interface\\Program.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Program.cs",
+              "RelativeToolTip": "REST_Interface\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:42:17.658Z",
+              "WhenOpened": "2024-07-11T16:05:39.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Message.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Message.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Message.cs",
-              "RelativeToolTip": "Core\\Entities\\Message.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:29:47.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CustomerDto.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\CustomerDto.cs",
-              "RelativeDocumentMoniker": "Core\\Dtos\\CustomerDto.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\CustomerDto.cs",
-              "RelativeToolTip": "Core\\Dtos\\CustomerDto.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T10:59:00.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ChatDto.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\ChatDto.cs",
-              "RelativeDocumentMoniker": "Core\\Dtos\\ChatDto.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\ChatDto.cs",
-              "RelativeToolTip": "Core\\Dtos\\ChatDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBMAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:35:02.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppointmentDto.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentDto.cs",
-              "RelativeDocumentMoniker": "Core\\Dtos\\AppointmentDto.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentDto.cs",
-              "RelativeToolTip": "Core\\Dtos\\AppointmentDto.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBkAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:34:51.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "REST_Interface\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:42:10.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "REST_Interface\\Controllers\\AppointmentController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:37:16.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MessageController.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\MessageController.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\MessageController.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\MessageController.cs",
-              "RelativeToolTip": "REST_Interface\\Controllers\\MessageController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:09:39.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\ChatController.cs",
-              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "REST_Interface\\Controllers\\ChatController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:29:06.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 7,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "Persistence\\CustomerRepository.cs",
               "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\CustomerRepository.cs",
               "RelativeToolTip": "Persistence\\CustomerRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T10:52:44.107Z"
+              "WhenOpened": "2024-07-11T16:01:05.319Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -453,7 +145,7 @@
           ]
         },
         {
-          "DockedWidth": 51,
+          "DockedWidth": 46,
           "SelectedChildIndex": -1,
           "Children": [
             {

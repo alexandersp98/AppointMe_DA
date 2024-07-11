@@ -45,7 +45,9 @@ namespace Persistence.Migrations
                         .HasColumnType("nvarchar(300)");
 
                     b.Property<byte[]>("RowType")
-                        .HasColumnType("varbinary(max)");
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
 
                     b.HasKey("Id");
 
@@ -73,7 +75,9 @@ namespace Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("RowType")
-                        .HasColumnType("varbinary(max)");
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -99,7 +103,9 @@ namespace Persistence.Migrations
                         .HasColumnType("int");
 
                     b.Property<byte[]>("RowType")
-                        .HasColumnType("varbinary(max)");
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
 
                     b.HasKey("Id");
 
@@ -121,10 +127,6 @@ namespace Persistence.Migrations
                     b.Property<int?>("Business_Id")
                         .HasColumnType("int");
 
-                    b.Property<string>("CustomerDemand")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("E_Mail_Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -144,7 +146,9 @@ namespace Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("RowType")
-                        .HasColumnType("varbinary(max)");
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
 
                     b.HasKey("Id");
 
@@ -161,11 +165,19 @@ namespace Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("BusinessIsWriter")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("Chat_Id")
                         .HasColumnType("int");
 
                     b.Property<byte[]>("RowType")
-                        .HasColumnType("varbinary(max)");
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<DateTime>("SendTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Text")
                         .IsRequired()

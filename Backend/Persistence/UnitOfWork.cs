@@ -96,6 +96,19 @@ namespace Persistence
 
             }
 
+            if (entity is Chat chatToValidate)
+            {
+                if(_dbContext.Chats.Any(c => c.Business_Id ==  chatToValidate.Business_Id && 
+                c.Customer_Id == chatToValidate.Customer_Id && c.Id != chatToValidate.Id))
+                {
+                    throw new ValidationException(new ValidationResult($"This Chat-Group already exists."
+                                           , new List<string> { nameof(Chat.Business_Id), nameof(Chat.Customer_Id) }), null, null);
+
+
+                }
+
+            }
+
 
            
         }
@@ -128,15 +141,145 @@ namespace Persistence
             await DeleteDatabaseAsync();
             await MigrateDatabaseAsync();
 
-            Business entrepreneur = new Business() {
-            EMail_Address = "m.mustermann@gmail.com",
-            Password = "123456Ab",
-            UserName = "MusterMaxi"};
+           
+
+            Business ent = new Business()
+            {
+                EMail_Address = "m.mustermann@gmail.net",
+                Password = "123456Ab",
+                UserName = "MusterMaxi"
+
+
+            };
+
+            Business ent2 = new Business()
+            {
+                EMail_Address = "m.mustermann2@gmail.net",
+                Password = "123456aB",
+                UserName = "MusterMaxi2"
+
+
+            };
+
+            List<ValidationResult> res = new List<ValidationResult>();
+
+            if (Validator.TryValidateObject(ent, new ValidationContext(ent), res, true))
+            {
+
+                BusinessRepository.Add(ent);
+
+
+            }
+            else
+            {
+                throw new Exception();
+            }
+
+            if (Validator.TryValidateObject(ent2, new ValidationContext(ent2), res, true))
+            {
+
+                BusinessRepository.Add(ent2);
+                await SaveChangesAsync();
+
+            }
+            else
+            {
+                throw new Exception();
+            }
+
+
+            Customer customer = new Customer()
+            {
+                FirstName = "Maria",
+                LastName = "Musterfrau",
+                E_Mail_Address = "m.musterfrau@gmail.com",
+                PhoneNumber = "0650 4554444",
+                Business_Id = ent.Id
+            };
+
+            if (Validator.TryValidateObject(customer, new ValidationContext(customer), res, true))
+            {
+
+                CustomerRepository.Add(customer);
+                await SaveChangesAsync();
+
+
+
+            }
+            else
+            {
+                throw new Exception();
+            }
+
+
+            Appointment appointment = new Appointment()
+            {
+                Appointment_Date = DateTime.Now,
+                Description = "Termin von Musterfrau",
+                Business_Id = ent.Id,
+                Customer_Id = customer.Id,
+
+            };
+
+            if (Validator.TryValidateObject(appointment, new ValidationContext(appointment), res, true))
+            {
+
+                AppointmentRepository.Add(appointment);
+                await SaveChangesAsync();
+
+
+            }
+            else
+            {
+                throw new Exception();
+            }
+
+
+            Chat chat = new Chat()
+            {
+                Business_Id = ent.Id,
+                Customer_Id = customer.Id,
+            };
+
+            if (Validator.TryValidateObject(chat, new ValidationContext(chat), res, true))
+            {
+
+                ChatRepository.Add(chat);
+                await SaveChangesAsync();
+
+
+            }
+            else
+            {
+                throw new Exception();
+            }
+
+            Message message = new Message()
+            {
+                Chat_Id = chat.Id,
+                Text = "letzter Preis",
+                BusinessIsWriter = false,
+                SendTime = DateTime.Now,
             
-            _dbContext.Businesses.Add(entrepreneur);
+                
+                
+            };
+
+            if (Validator.TryValidateObject(message, new ValidationContext(message), res, true))
+            {
+
+                MessageRepository.Add(message);
+
+                await SaveChangesAsync();
+
+            }
+            else
+            {
+                throw new Exception();
+            }
 
 
-            await SaveChangesAsync();
+            
         }
     }
 

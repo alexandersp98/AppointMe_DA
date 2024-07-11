@@ -24,11 +24,9 @@ namespace Core.Entities
         public string E_Mail_Address { get; set; } = string.Empty;
 
 
-        [RegularExpression("^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$")]
+        [RegularExpression("^[\\+]?[(]?[0-9]{4}[)]?[-\\s\\\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$")]
         public string PhoneNumber { get; set; } = string.Empty;
 
-
-        public string CustomerDemand { get; set; } = string.Empty;
 
 
         [ForeignKey(nameof(Business_Id))]

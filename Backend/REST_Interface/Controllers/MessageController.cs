@@ -32,6 +32,8 @@ namespace REST_Interface.Controllers
                     Id = message.Id,
                     Chat_Id = message.Chat_Id,
                     Text = message.Text,
+                    BusinessIsWriter = message.BusinessIsWriter,
+                    SendTime = message.SendTime,
                 });
 
             }

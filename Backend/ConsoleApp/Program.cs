@@ -13,26 +13,9 @@ namespace ConsoleApp
 
             using IUnitOfWork uow = new UnitOfWork();
 
+            await uow.FillDbAsync();
+            
 
-            Business ent = new Business()
-            {
-                EMail_Address = "m.mustermann@gmail.net",
-                Password = "123456Ab",
-                UserName = "MusterMaxi2"
-
-
-            };
-
-            List<ValidationResult> res = new List<ValidationResult>();
-
-            if (Validator.TryValidateObject(ent, new ValidationContext(ent), res, true))
-            {
-
-                uow.BusinessRepository.Add(ent);
-
-                await uow.SaveChangesAsync();
-
-            }
 
             Console.WriteLine();
 
