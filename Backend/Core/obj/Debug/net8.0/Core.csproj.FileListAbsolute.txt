@@ -27,3 +27,18 @@ C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Core\obj\Debug\net8.0
 C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.pdb
 C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.genruntimeconfig.cache
 C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\bin\Debug\net8.0\Core.deps.json
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\bin\Debug\net8.0\Core.runtimeconfig.json
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\bin\Debug\net8.0\Core.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\bin\Debug\net8.0\Core.pdb
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.sourcelink.json
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\refint\Core.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.pdb
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\Core.genruntimeconfig.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Core\obj\Debug\net8.0\ref\Core.dll

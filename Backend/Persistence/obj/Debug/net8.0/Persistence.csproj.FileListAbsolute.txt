@@ -16,3 +16,21 @@ C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Persistence\obj\Debug
 C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.pdb
 C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache
 C:\Mein_privater_Ordner\Schule\Diplom\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\ref\Persistence.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\bin\Debug\net8.0\Persistence.runtimeconfig.json
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\bin\Debug\net8.0\Core.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\bin\Debug\net8.0\Core.pdb
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\Persistence\obj\Debug\net8.0\ref\Persistence.dll
