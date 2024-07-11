@@ -14,7 +14,18 @@ namespace ConsoleApp
             using IUnitOfWork uow = new UnitOfWork();
 
             await uow.FillDbAsync();
+
+            //Business business = new Business() 
+            //{ 
+            //    EMail_Address = "m.test@gmail.com",
+            //    Password = "passw324324A",
             
+            //    UserName = "test",
+            //};
+            
+            //List<ValidationResult> res = new List<ValidationResult>();
+
+            //Validator.TryValidateObject(business, new ValidationContext(business), res, true);
 
 
             Console.WriteLine();

@@ -47,7 +47,7 @@ namespace REST_Interface.Controllers
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(newChat, new ValidationContext(newChat), results))
+            if (!Validator.TryValidateObject(newChat, new ValidationContext(newChat), results, true))
             {
                 string errorMessages = "";
 

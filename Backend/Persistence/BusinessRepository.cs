@@ -23,6 +23,13 @@ namespace Persistence
             _context.Businesses.Remove(businessToDelete);
         }
 
+        public async Task<bool> ExistsAsync(string username, string password)
+        {
+
+            return await _context.Businesses.AnyAsync(b => b.UserName == username && b.Password == password);
+
+        }
+
         public async Task<List<Business>> GetAllAsync()
         {
             return await _context.Businesses.OrderBy(e => e.UserName)

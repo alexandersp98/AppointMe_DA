@@ -45,12 +45,28 @@ namespace REST_Interface.Controllers
 
         }
 
+        [HttpGet("/BusinessLoginCheck")]
+        public async Task<IActionResult> Get(string username, string password)
+        {
+            if(!(await _uow.BusinessRepository.ExistsAsync(username, password)))
+            {
+
+                return BadRequest("username or password invalid");
+
+            }
+
+
+
+            return Ok();
+        }
+
+
         [HttpPost]
-        public async Task<IActionResult> Post(Business newEntrepreneur)
+        public async Task<IActionResult> Post(Business newBusiness)
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(newEntrepreneur, new ValidationContext(newEntrepreneur), results))
+            if (!Validator.TryValidateObject(newBusiness, new ValidationContext(newBusiness), results, true))
             {
                 string errorMessages = "";
 
@@ -65,7 +81,7 @@ namespace REST_Interface.Controllers
 
             try
             {
-                _uow.BusinessRepository.Add(newEntrepreneur);
+                _uow.BusinessRepository.Add(newBusiness);
 
                 await _uow.SaveChangesAsync();
 

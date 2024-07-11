@@ -49,7 +49,7 @@ namespace REST_Interface.Controllers
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(newMessage, new ValidationContext(newMessage), results))
+            if (!Validator.TryValidateObject(newMessage, new ValidationContext(newMessage), results, true))
             {
                 string errorMessages = "";
 

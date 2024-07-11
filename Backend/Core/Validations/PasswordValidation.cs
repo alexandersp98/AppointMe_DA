@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,28 +17,40 @@ namespace Core.Validations
             {
                 if (passwordToValidate.Length >= 8)
                 {
-                    if (passwordToValidate.Any(c => c >= 'A' && c <= 'Z')
-                        && passwordToValidate.Any(c => c >= 'a' && c <= 'z'))
+                    if (!passwordToValidate.Any(ch => !char.IsAsciiLetterOrDigit(ch)))
                     {
 
 
-                        return ValidationResult.Success;
 
+                        if (passwordToValidate.Any(c => c >= 'A' && c <= 'Z')
+                            && passwordToValidate.Any(c => c >= 'a' && c <= 'z'))
+                        {
+
+
+                            return ValidationResult.Success;
+
+
+                        }
+
+                        return new ValidationResult("password does not contain one upper- or lower letter");
 
                     }
 
-                    return new ValidationResult("password does not contain one upper- or lower letter");
+                    return new ValidationResult("password should only contain numbers or letters");
+
+
 
                 }
 
                 return new ValidationResult("password not long enough, 8 letters minimum");
+
+
 
             }
 
             return new ValidationResult("value is no string");
 
 
-            
         }
 
 

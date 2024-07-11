@@ -7,7 +7,7 @@ namespace Core.Contracts
         void Add(Business business);
 
         void Delete(Business businessToDelete);
-
+        Task<bool> ExistsAsync(string username, string password);
         Task<List<Business>> GetAllAsync();
 
         Task<Business?> GetById(int businessId);

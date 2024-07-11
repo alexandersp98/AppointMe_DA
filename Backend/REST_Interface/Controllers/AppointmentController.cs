@@ -50,7 +50,7 @@ namespace REST_Interface.Controllers
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(newAppointment, new ValidationContext(newAppointment), results))
+            if (!Validator.TryValidateObject(newAppointment, new ValidationContext(newAppointment), results, true))
             {
                 string errorMessages = "";
 

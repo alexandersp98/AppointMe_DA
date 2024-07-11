@@ -31,7 +31,6 @@ namespace REST_Interface.Controllers
                 {
                     Id = cust.Id,
 
-                    CustomerDemand = cust.CustomerDemand,
                     E_Mail_Address = cust.E_Mail_Address,
                     FirstName = cust.FirstName,
                     LastName = cust.LastName,
@@ -53,7 +52,7 @@ namespace REST_Interface.Controllers
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
-            if (!Validator.TryValidateObject(newCustomer, new ValidationContext(newCustomer), results))
+            if (!Validator.TryValidateObject(newCustomer, new ValidationContext(newCustomer), results, true))
             {
                 string errorMessages = "";
 
