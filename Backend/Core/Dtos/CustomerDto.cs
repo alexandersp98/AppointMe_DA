@@ -24,12 +24,7 @@ namespace Core.Dtos
         public string PhoneNumber { get; set; } = string.Empty;
 
 
-        public string CustomerDemand { get; set; } = string.Empty;
 
-
-        public Business? Entrepreneur { get; set; }
-
-
-        public int? Entrepreneur_Id { get; set; }
+        public int? Business_Id { get; set; }
     }
 }

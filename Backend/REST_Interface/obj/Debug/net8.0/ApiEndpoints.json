@@ -40,8 +40,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newEntrepreneur",
-        "Type": "Core.Entities.Entrepreneur",
+        "Name": "newBusiness",
+        "Type": "Core.Entities.Business",
         "IsRequired": true
       }
     ],
@@ -56,8 +56,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "entrepreneurId",
+        "Name": "businessId",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.BusinessController",
+    "Method": "Get",
+    "RelativePath": "BusinessLoginCheck",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

@@ -15,10 +15,6 @@ namespace Core.Dtos
         public int Id { get; set; }
         public DateTime Appointment_Date { get; set; }
 
-        public Customer? Customer { get; set; }
-
-        public Business? Business { get; set; }
-
 
         public string Description { get; set; } = string.Empty;
 

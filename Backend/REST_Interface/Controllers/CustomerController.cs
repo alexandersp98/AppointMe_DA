@@ -35,7 +35,7 @@ namespace REST_Interface.Controllers
                     FirstName = cust.FirstName,
                     LastName = cust.LastName,
                     PhoneNumber = cust.PhoneNumber,
-                    Entrepreneur_Id = cust.Business_Id
+                    Business_Id = cust.Business_Id
 
                 });
 

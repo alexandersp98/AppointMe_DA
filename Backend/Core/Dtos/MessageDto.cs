@@ -11,7 +11,6 @@ namespace Core.Dtos
     {
 
         public int Id { get; set; }
-        public Chat? Chat { get; set; }
 
         public int? Chat_Id { get; set; }
 
