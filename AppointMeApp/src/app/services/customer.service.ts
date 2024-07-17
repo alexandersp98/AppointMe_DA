@@ -1,16 +1,15 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Business } from '../classes/business.model';
+import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
+import { Customer } from '../classes/customer.model';
 
 @Injectable({
   providedIn: 'root'
 })
+export class CustomerService {
 
-export class BusinessService {
-
-  url: string = environment.apiBaseUrl+'GetAllBusinesses';
-  list: Business[] = [];
+  url: string = environment.apiBaseUrl+'GetAllCustomers';
+  list: Customer[] = [];
   
   constructor(private http: HttpClient) { }
 
@@ -19,7 +18,7 @@ export class BusinessService {
     .subscribe({
       next: res => 
         {
-          this.list = res as Business[];
+          this.list = res as Customer[];
           console.log(res);
         },
       error: err => {console.log(err)}
