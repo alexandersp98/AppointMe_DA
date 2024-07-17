@@ -46,25 +46,32 @@ namespace REST_Interface.Controllers
         }
 
         [HttpGet("/BusinessLoginCheck")]
-        public async Task<IActionResult> Get(string username, string password)
+        public async Task<IActionResult> Get([FromQuery] string username,[FromQuery] string password)
         {
             if(!(await _uow.BusinessRepository.ExistsAsync(username, password)))
             {
 
-                return BadRequest("username or password invalid");
+                return Ok(0);
 
             }
 
 
 
-            return Ok();
+            return Ok(1);
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> Post(Business newBusiness)
+        public async Task<IActionResult> Post([FromQuery] BusinessDto newBusinessDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
+
+            Business newBusiness = new Business()
+            {
+                EMail_Address = newBusinessDto.EMail_Address,
+                Password = newBusinessDto.Password,
+                UserName = newBusinessDto.UserName,
+            };
 
             if (!Validator.TryValidateObject(newBusiness, new ValidationContext(newBusiness), results, true))
             {
@@ -101,7 +108,7 @@ namespace REST_Interface.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int businessId)
+        public async Task<IActionResult> Delete([FromQuery] int businessId)
         {
             Business? businessToDelete = await _uow.BusinessRepository.GetById(businessId);
 
