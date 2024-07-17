@@ -11,6 +11,6 @@ namespace Core.Contracts
         Task<List<Business>> GetAllAsync();
 
         Task<Business?> GetById(int businessId);
-
+        Task<Business?> GetByUsernameAsync(string username);
     }
 }

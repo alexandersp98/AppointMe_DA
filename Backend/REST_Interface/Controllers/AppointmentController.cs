@@ -46,9 +46,17 @@ namespace REST_Interface.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Appointment newAppointment)
+        public async Task<IActionResult> Post([FromQuery] AppointmentDto newAppointmentDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
+
+            Appointment newAppointment = new Appointment() {
+            Description = newAppointmentDto.Description,
+            Appointment_Date = newAppointmentDto.Appointment_Date,
+            Business_Id = newAppointmentDto.Business_Id,
+            Customer_Id = newAppointmentDto.Customer_Id,
+            };
+
 
             if (!Validator.TryValidateObject(newAppointment, new ValidationContext(newAppointment), results, true))
             {
@@ -85,7 +93,7 @@ namespace REST_Interface.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int appointmentId)
+        public async Task<IActionResult> Delete([FromQuery] int appointmentId)
         {
             Appointment? appointmentToDelete = await _uow.AppointmentRepository.GetById(appointmentId);
 

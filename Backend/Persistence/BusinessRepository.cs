@@ -40,5 +40,10 @@ namespace Persistence
         {
             return await _context.Businesses.Where(e => e.Id == businessId).FirstOrDefaultAsync();
         }
+
+        public async Task<Business?> GetByUsernameAsync(string username)
+        {
+            return await _context.Businesses.Where(b => b.UserName == username).FirstOrDefaultAsync();
+        }
     }
 }

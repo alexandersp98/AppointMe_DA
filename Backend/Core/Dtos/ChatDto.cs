@@ -12,7 +12,7 @@ namespace Core.Dtos
     {
         public int Id { get; set; }
 
-        public int? Entrepreneur_Id { get; set; }
+        public int? Business_Id { get; set; }
 
         public int? Customer_Id { get; set; }
     }

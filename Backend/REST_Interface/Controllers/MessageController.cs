@@ -45,9 +45,17 @@ namespace REST_Interface.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Message newMessage)
+        public async Task<IActionResult> Post([FromQuery] MessageDto newMessageDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
+
+            Message newMessage = new Message() {
+            BusinessIsWriter = newMessageDto.BusinessIsWriter,
+            Chat_Id = newMessageDto.Chat_Id,
+            SendTime = newMessageDto.SendTime,
+            Text = newMessageDto.Text,
+            
+            };
 
             if (!Validator.TryValidateObject(newMessage, new ValidationContext(newMessage), results, true))
             {
@@ -84,7 +92,7 @@ namespace REST_Interface.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int messageId)
+        public async Task<IActionResult> Delete([FromQuery] int messageId)
         {
             Message? messageToDelete = await _uow.MessageRepository.GetById(messageId);
 

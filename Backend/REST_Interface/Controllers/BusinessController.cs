@@ -55,9 +55,17 @@ namespace REST_Interface.Controllers
 
             }
 
+            Business? business = await _uow.BusinessRepository.GetByUsernameAsync(username);
 
+            BusinessDto businessDto = new BusinessDto()
+            {
+                Id = business!.Id,
+                UserName = business.UserName,
+                EMail_Address = business.EMail_Address,
+                Password = business.Password
+            };
 
-            return Ok(1);
+            return Ok(businessDto);
         }
 
 

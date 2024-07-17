@@ -31,7 +31,7 @@ namespace REST_Interface.Controllers
                 {
                     Id = chat.Id,
                     Customer_Id = chat.Customer_Id,
-                    Entrepreneur_Id = chat.Business_Id,
+                    Business_Id = chat.Business_Id,
                 });
 
             }
@@ -43,9 +43,16 @@ namespace REST_Interface.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Chat newChat)
+        public async Task<IActionResult> Post([FromQuery] ChatDto newChatDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
+
+            Chat newChat = new Chat()
+            {
+                Business_Id = newChatDto.Business_Id,
+                Customer_Id = newChatDto.Customer_Id,
+
+            };
 
             if (!Validator.TryValidateObject(newChat, new ValidationContext(newChat), results, true))
             {
@@ -82,7 +89,7 @@ namespace REST_Interface.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int chatId)
+        public async Task<IActionResult> Delete([FromQuery] int chatId)
         {
             Chat? chatToDelete = await _uow.ChatRepository.GetById(chatId);
 
