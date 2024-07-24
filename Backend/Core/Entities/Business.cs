@@ -19,7 +19,7 @@ namespace Core.Entities
         [Required]
         [RegularExpression("^[\\w-\\.]+@([\\w-]+\\.)[\\w-]{2,4}")]
 
-        public string EMail_Address { get; set; } = string.Empty;
+        public string E_Mail_Address { get; set; } = string.Empty;
 
 
         [PasswordValidation]

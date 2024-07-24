@@ -14,7 +14,7 @@ namespace Core.Dtos
         public int Id { get; set; }
         public string UserName { get; set; } = string.Empty;
 
-        public string EMail_Address { get; set; } = string.Empty;
+        public string E_Mail_Address { get; set; } = string.Empty;
 
         public string Password { get; set; } = string.Empty;
 

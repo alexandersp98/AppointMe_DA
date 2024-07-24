@@ -43,7 +43,7 @@ namespace REST_Interface.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromQuery] ChatDto newChatDto)
+        public async Task<IActionResult> Post([FromBody] ChatDto newChatDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
 

@@ -73,11 +73,11 @@ namespace Persistence
 
                 }
 
-                if (_dbContext.Businesses.Any(e => e.EMail_Address == entrepreneur.EMail_Address && e.Id != entrepreneur.Id))
+                if (_dbContext.Businesses.Any(e => e.E_Mail_Address == entrepreneur.E_Mail_Address && e.Id != entrepreneur.Id))
                 {
 
-                    throw new ValidationException(new ValidationResult($"The E-Mail address {entrepreneur.EMail_Address} already exists."
-                        , new List<string> { nameof(Business.EMail_Address) }), null, null);
+                    throw new ValidationException(new ValidationResult($"The E-Mail address {entrepreneur.E_Mail_Address} already exists."
+                        , new List<string> { nameof(Business.E_Mail_Address) }), null, null);
 
 
                 }
@@ -145,7 +145,7 @@ namespace Persistence
 
             Business ent = new Business()
             {
-                EMail_Address = "m.mustermann@gmail.net",
+                E_Mail_Address = "m.mustermann@gmail.net",
                 Password = "123456Ab",
                 UserName = "MusterMaxi"
 
@@ -154,7 +154,7 @@ namespace Persistence
 
             Business ent2 = new Business()
             {
-                EMail_Address = "m.mustermann2@gmail.net",
+                E_Mail_Address = "m.mustermann2@gmail.net",
                 Password = "123456aB",
                 UserName = "MusterMaxi2"
 

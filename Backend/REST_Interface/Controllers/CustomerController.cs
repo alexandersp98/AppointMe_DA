@@ -48,7 +48,7 @@ namespace REST_Interface.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromQuery] CustomerDto newCustomerDto)
+        public async Task<IActionResult> Post([FromBody] CustomerDto newCustomerDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
 

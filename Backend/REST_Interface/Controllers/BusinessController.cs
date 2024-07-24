@@ -33,7 +33,7 @@ namespace REST_Interface.Controllers
                 {
                     Id = business.Id,
                     UserName = business.UserName,
-                    EMail_Address = business.EMail_Address,
+                    E_Mail_Address = business.E_Mail_Address,
                     Password = business.Password
                 });
 
@@ -61,7 +61,7 @@ namespace REST_Interface.Controllers
             {
                 Id = business!.Id,
                 UserName = business.UserName,
-                EMail_Address = business.EMail_Address,
+                E_Mail_Address = business.E_Mail_Address,
                 Password = business.Password
             };
 
@@ -70,13 +70,13 @@ namespace REST_Interface.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromQuery] BusinessDto newBusinessDto)
+        public async Task<IActionResult> Post([FromBody] BusinessDto newBusinessDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
             Business newBusiness = new Business()
             {
-                EMail_Address = newBusinessDto.EMail_Address,
+                E_Mail_Address = newBusinessDto.E_Mail_Address,
                 Password = newBusinessDto.Password,
                 UserName = newBusinessDto.UserName,
             };

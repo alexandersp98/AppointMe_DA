@@ -60,24 +60,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "EMail_Address",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "newBusinessDto",
+        "Type": "Core.Dtos.BusinessDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

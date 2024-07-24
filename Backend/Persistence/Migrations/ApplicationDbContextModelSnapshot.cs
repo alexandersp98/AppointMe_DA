@@ -66,7 +66,7 @@ namespace Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("EMail_Address")
+                    b.Property<string>("E_Mail_Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

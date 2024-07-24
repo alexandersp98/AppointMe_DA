@@ -1,6 +1,6 @@
 export class Business {
-    id: number = 0;
-    userName: string = '';
-    eMail_Address: string = '';
-    password: string = '';
+    Id: number = 0;
+    UserName: string = '';
+    E_Mail_Address: string = '';
+    Password: string = '';
 }
