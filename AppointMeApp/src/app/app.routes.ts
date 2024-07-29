@@ -3,6 +3,8 @@ import { DevSiteComponent } from './components/dev-site/dev-site.component';
 import { LoginComponent } from './components/login/login.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { FormularComponent } from './components/formular/formular.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { CreateAccountComponent } from './components/create-account/create-account.component';
 
 export const routes: Routes = [
     {
@@ -28,6 +30,16 @@ export const routes: Routes = [
     {
         path: 'formular',
         component: FormularComponent
+    },
+
+    {
+        path: 'resetPassword',
+        component: ResetPasswordComponent
+    },
+
+    {
+        path: 'createAccount',
+        component: CreateAccountComponent
     },
 
 ];
