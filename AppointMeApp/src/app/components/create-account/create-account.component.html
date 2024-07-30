@@ -1,9 +1,14 @@
 <div class="container">
     <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
     <p id="text">Create an account here</p>
-    <input id="inputEmail" placeholder="Email" required>
-    <input id="inputPassword" placeholder="Password" required>
-    <button id="btnCreateAccount" onclick="console.log('Create account')">Create account</button>
+    <form [formGroup]="businessForm" (ngSubmit)="onSubmit()">
+        <div id="form">
+            <input type="text" id="inputUsername" name="userName" placeholder="Username" formControlName="userName" required>
+            <input type="text" id="inputEmail" placeholder="Email" formControlName="e_Mail_Address" required>
+            <input type="text" id="inputPassword" placeholder="Password" formControlName="password" required>
+            <button type="submit" [disabled]="businessForm.invalid" id="btnCreateAccount">Create account</button>
+        </div>
+    </form>
     <a style = "margin: 10px; font-weight: bold;" href="http://localhost:4200/login">Cancel</a>
     <p id="smallText">By clicking "Create account" you agree to the AppointMe TOS and Privacy Policy.</p>
 </div>

@@ -4461,7 +4461,7 @@
       "projectName": "ConsoleApp",
       "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\ConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",

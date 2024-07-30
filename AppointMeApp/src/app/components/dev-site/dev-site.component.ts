@@ -25,39 +25,27 @@ export class DevSiteComponent implements OnInit {
     this.customerService.refreshList();
 
 
-    /* post test, FromBody
+     //post test, FromBody
 
 
-    let business = new Business;
-
-
-    business.E_Mail_Address = 'test@gmail.com';
-    business.Password = '1234567SDAFDa';
-
-    business.UserName = 'testtest';
+    let business = new Business('testtest', 'test@gmail.com', '1234567SDAFDa');
 
     const headers = new HttpHeaders()
     .append(
       'Content-Type',
       'application/json'
     );
-
     const body=JSON.stringify(business);
-
-
-
     this.businessService.postBusiness(body, headers);
-    */
-
 
     //login Check test, FromQuery
 
 
-    let params = new HttpParams().set('username', 'MusterMaxi')
+    /*let params = new HttpParams().set('username', 'MusterMaxi')
     .set('password', '123456Ab');
 
     this.businessService.LoginCheck(params);
-
+    */
   }
 
 }

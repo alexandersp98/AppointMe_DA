@@ -6,20 +6,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Businesses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Customers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Chats.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\rest_interface\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\rest_interface\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\rest_interface\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,28 +25,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Customers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Customers.sql",
-              "ToolTip": "dbo.Customers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-29T08:37:16.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Chats [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Chats.sql",
-              "ToolTip": "dbo.Chats [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-29T08:34:56.441Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -68,37 +34,12 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Businesses.sql",
               "ToolTip": "dbo.Businesses [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-29T08:26:20.645Z",
+              "WhenOpened": "2024-07-30T13:35:08.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MessageController.cs",
-              "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\MessageController.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\MessageController.cs",
-              "ToolTip": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\MessageController.cs",
-              "RelativeToolTip": "REST_Interface\\Controllers\\MessageController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwHIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:07:05.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "REST_Interface\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "REST_Interface\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAkwDIAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:06:52.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ChatController.cs",
               "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "REST_Interface\\Controllers\\ChatController.cs",
@@ -106,11 +47,12 @@
               "RelativeToolTip": "REST_Interface\\Controllers\\ChatController.cs",
               "ViewState": "AQIAAGEAAAAAAAAAAAAkwC0AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:06:39.851Z"
+              "WhenOpened": "2024-07-24T17:06:39.851Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "AppointmentController.cs",
               "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\AppointmentController.cs",
               "RelativeDocumentMoniker": "REST_Interface\\Controllers\\AppointmentController.cs",
@@ -122,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "BusinessController.cs",
               "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\BusinessController.cs",
               "RelativeDocumentMoniker": "REST_Interface\\Controllers\\BusinessController.cs",

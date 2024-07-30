@@ -11,7 +11,7 @@
         "projectName": "Core",
         "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -91,7 +91,7 @@
         "projectName": "Persistence",
         "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,7 +175,7 @@
         "projectName": "REST_Interface",
         "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
         "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
+        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",

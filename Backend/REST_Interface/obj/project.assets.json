@@ -3579,7 +3579,7 @@
       "projectName": "REST_Interface",
       "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
       "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
+      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",

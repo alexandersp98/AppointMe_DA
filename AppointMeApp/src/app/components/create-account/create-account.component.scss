@@ -28,7 +28,7 @@
     margin-bottom: 40px;
 }
 
-#inputEmail, #inputPassword{
+#inputEmail, #inputPassword, #inputUsername{
     background-color: #222222;
     border: 3px solid #222222;
     border-radius: 25px;
@@ -98,4 +98,13 @@
     text-align: right;
     align-content: center;
     height: 100px;
+}
+
+#form {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    padding: 1em 0;
 }
