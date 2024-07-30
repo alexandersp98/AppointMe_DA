@@ -8,29 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Appointment_Date",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Customer_Id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Business_Id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
+        "Name": "newAppointmentDto",
+        "Type": "Core.Dtos.AppointmentDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -113,19 +93,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Business_Id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Customer_Id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
+        "Name": "newChatDto",
+        "Type": "Core.Dtos.ChatDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -155,34 +125,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "FirstName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "LastName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "E_Mail_Address",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PhoneNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Business_Id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
+        "Name": "newCustomerDto",
+        "Type": "Core.Dtos.CustomerDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -262,29 +207,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Chat_Id",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Text",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BusinessIsWriter",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "SendTime",
-        "Type": "System.DateTime",
-        "IsRequired": false
+        "Name": "newMessageDto",
+        "Type": "Core.Dtos.MessageDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
