@@ -15,6 +15,8 @@ namespace Core.Contracts
 
         IAppointmentRepository AppointmentRepository { get; }
 
+        IFormularObjectRepository FormularObjectRepository { get; }
+
         Task<int> SaveChangesAsync();
         Task DeleteDatabaseAsync();
         Task MigrateDatabaseAsync();

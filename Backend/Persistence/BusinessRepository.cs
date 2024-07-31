@@ -21,6 +21,7 @@ namespace Persistence
         public void Delete(Business businessToDelete)
         {
             _context.Businesses.Remove(businessToDelete);
+            
         }
 
         public async Task<bool> ExistsAsync(string username, string password)

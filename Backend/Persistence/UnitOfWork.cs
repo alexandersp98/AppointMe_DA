@@ -21,6 +21,8 @@ namespace Persistence
 
         public IAppointmentRepository AppointmentRepository {  get; }
 
+        public IFormularObjectRepository FormularObjectRepository { get; }
+
         public UnitOfWork() : this(new ApplicationDbContext())
         { }
 
@@ -33,6 +35,7 @@ namespace Persistence
             ChatRepository = new ChatRepository(context);
             MessageRepository = new MessageRepository(context);
             AppointmentRepository = new AppointmentRepository(context);
+            FormularObjectRepository = new FormularObjectRepository(context);
         }
 
         public UnitOfWork(IConfiguration configuration) : this(new ApplicationDbContext(configuration))
