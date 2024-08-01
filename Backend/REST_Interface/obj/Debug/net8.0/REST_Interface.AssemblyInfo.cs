@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("REST_Interface")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7aefe4872a17b2431a85e7fabf0c929f25a6d7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c861af6f26c4e4beefa331bdadb3db3b786bf360")]
 [assembly: System.Reflection.AssemblyProductAttribute("REST_Interface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("REST_Interface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

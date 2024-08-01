@@ -41,24 +41,21 @@ export class LoginComponent {
       this.businessService.login(body, headers).subscribe({
         next: (res) => {
           console.log(res.message)
+          this.businessService.storeToken(res.token);
+          console.log(res.token);
           this.router.navigate(['dashboard']);
         },
         error: (err) => {
           console.log(err.error.message)
+          
+          this.snackBar.open('The entered Login data is invalid.', 'Close', {
+            duration: 3000,
+          });
+
+          this.loginForm.reset();
         }
       })
-
-
-     }
-     else{
-      this.snackBar.open('The entered Login data is invalid.', 'Close', {
-        duration: 3000,
-      });
-      console.log('Login Data invalid');
-     }
-
-     
-      
+     }     
     }
 
 }

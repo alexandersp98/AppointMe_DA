@@ -42,8 +42,8 @@ export class DevSiteComponent implements OnInit {
     let params = new HttpParams().set('username', 'MusterMaxi')
     .set('password', '123456Ab');
 
-    this.businessService.LoginCheck(params);
-    console.log('Post succeded');
+    /*this.businessService.LoginCheck(params);
+    console.log('Post succeded');*/
   }
 
 }

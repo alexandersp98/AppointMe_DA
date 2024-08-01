@@ -1,1 +1,16 @@
-<p>dashboard works!</p>
+<p>Hello to the Dashboard</p>
+
+<button id="logOut" (click)="logOut()">log out</button>
+
+<div *ngFor="let business of businessService.list">
+    <p style="font-weight: bold; color: aqua;">GetAllBusinesses</p>
+    <p style="font-weight: bold;">id: </p>
+    <p>{{business.id}}</p>
+    <p style="font-weight: bold;">UserName: </p>
+    <p>{{business.userName}}</p>
+    <p style="font-weight: bold;">Email Address: </p>
+    <p>{{business.e_Mail_Address}}</p>
+    <p style="font-weight: bold;">Password</p>
+    <p>{{business.password}}</p>
+</div>
+

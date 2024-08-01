@@ -1,15 +1,16 @@
 import { Business } from './../classes/business.model';
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { Injectable, SkipSelf } from '@angular/core';
+import { HttpClient, HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpParams, HttpRequest } from '@angular/common/http';
 import { environment } from '../../environments/environment.development';
 import { Observable } from 'rxjs';
-//import { error } from 'console';
+import { Router } from '@angular/router';
+
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class BusinessService {
+export class BusinessService{
 
   urlAllBusiness: string = environment.apiBaseUrl+'GetAllBusinesses';
   urlPost: string = environment.apiBaseUrl + 'Business';
@@ -17,7 +18,9 @@ export class BusinessService {
   urlLogin: string = environment.apiBaseUrl + 'Authenticate';
   list: Business[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) {
+
+   }
 
   refreshList(){
     this.http.get(this.urlAllBusiness)
@@ -25,27 +28,45 @@ export class BusinessService {
       next: res =>
         {
           this.list = res as Business[];
-          console.log(res);
         },
       error: err => {console.log(err)}
     })
   }
 
+  //sign up
   postBusiness(newBusiness: any, headers: any): Observable<any>
   {
     return this.http.post<any>(this.urlPost, newBusiness, {headers : headers});
   }
 
-  LoginCheck(items: HttpParams)
+  //sign in
+  login(loginObj: any, headers: any){
+    return this.http.post<any>(this.urlLogin, loginObj, {headers : headers})
+  }
+
+  /*LoginCheck(items: HttpParams)
   {
     this.http.get(this.urlLoginCheck, {params: items}).subscribe(
 
       res => {console.log(res);}
 
     )
+  }*/
+
+    storeToken(tokenValue: string){
+      localStorage.setItem('token', tokenValue)
+    }
+
+  getToken(){
+    return localStorage.getItem('token')
   }
 
-  login(loginObj: any, headers: any){
-    return this.http.post<any>(this.urlLogin, loginObj, {headers : headers})
+  isLoggedIn():boolean{
+    return !!localStorage.getItem('token')
+  }
+
+  signOut(){
+    localStorage.clear();
+    this.router.navigate(['login']);
   }
 }

@@ -1,6 +1,7 @@
 ﻿using Core.Contracts;
 using Core.Dtos;
 using Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Persistence;
@@ -23,7 +24,7 @@ namespace REST_Interface.Controllers
             _uow = uow;
         }
 
-
+        [Authorize]
         [HttpGet("/GetAllBusinesses")]
         public async Task<IActionResult> Get()
         {

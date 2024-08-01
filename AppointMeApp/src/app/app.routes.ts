@@ -6,6 +6,7 @@ import { FormularComponent } from './components/formular/formular.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
     {
@@ -45,7 +46,7 @@ export const routes: Routes = [
 
     {
         path: 'dashboard',
-        component: DashboardComponent
+        component: DashboardComponent, canActivate: [authGuard]
     },
 
 ];
