@@ -1,6 +1,9 @@
 
 using Core.Contracts;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Persistence;
+using System.Text;
 
 namespace REST_Interface
 {
@@ -19,6 +22,23 @@ namespace REST_Interface
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("LeberkaaaaaaaaasssPepi123456789LeberkasIstSoGeil123456")),
+                    ValidateAudience = false,
+                    ValidateIssuer = false
+                };
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -34,6 +54,8 @@ namespace REST_Interface
             .AllowAnyHeader());
 
             app.UseHttpsRedirection();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

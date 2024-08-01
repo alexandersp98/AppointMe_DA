@@ -38,6 +38,8 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
 }
 
 #handLogo {
@@ -46,6 +48,15 @@
     width: 140px; 
     margin-bottom: 40px;
     margin-top: 65px;
+}
+
+#form{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    padding: 1em 0;
 }
 
 #footer {

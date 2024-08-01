@@ -1,6 +1,6 @@
 import { Business } from './../classes/business.model';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from '../../environments/environment.development';
 import { Observable } from 'rxjs';
 //import { error } from 'console';
@@ -14,6 +14,7 @@ export class BusinessService {
   urlAllBusiness: string = environment.apiBaseUrl+'GetAllBusinesses';
   urlPost: string = environment.apiBaseUrl + 'Business';
   urlLoginCheck: string = environment.apiBaseUrl + 'BusinessLoginCheck';
+  urlLogin: string = environment.apiBaseUrl + 'Authenticate';
   list: Business[] = [];
 
   constructor(private http: HttpClient) { }
@@ -30,28 +31,21 @@ export class BusinessService {
     })
   }
 
-  postBusiness(newBusiness: any, headers: any){
-    this.http.post(this.urlPost, newBusiness,
-
- {headers : headers}
-
-
-
-    ).subscribe( res => {console.log(res)});
-
+  postBusiness(newBusiness: any, headers: any): Observable<any>
+  {
+    return this.http.post<any>(this.urlPost, newBusiness, {headers : headers});
   }
 
   LoginCheck(items: HttpParams)
   {
-
-    this.http.get(this.urlLoginCheck, {params: items})
-    .subscribe(
+    this.http.get(this.urlLoginCheck, {params: items}).subscribe(
 
       res => {console.log(res);}
 
     )
   }
 
-
-
+  login(loginObj: any, headers: any){
+    return this.http.post<any>(this.urlLogin, loginObj, {headers : headers})
+  }
 }

@@ -1,12 +1,12 @@
 <div class="container">
     <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
     <p id="text">Create an account here</p>
-    <form [formGroup]="businessForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="registerForm" (submit)="submitRegistration()">
         <div id="form">
-            <input type="text" id="inputUsername" name="userName" placeholder="Username" formControlName="userName" required>
-            <input type="text" id="inputEmail" placeholder="Email" formControlName="e_Mail_Address" required>
+            <input type="text" id="inputUsername" placeholder="Username" formControlName="userName" required>
+            <input type="email" id="inputEmail" placeholder="Email" formControlName="e_Mail_Address" required>
             <input type="text" id="inputPassword" placeholder="Password" formControlName="password" required>
-            <button type="submit" [disabled]="businessForm.invalid" id="btnCreateAccount">Create account</button>
+            <button type="submit" id="btnCreateAccount" >Create account</button>
         </div>
     </form>
     <a style = "margin: 10px; font-weight: bold;" href="http://localhost:4200/login">Cancel</a>

@@ -2,8 +2,12 @@
 using Core.Dtos;
 using Core.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Persistence;
 using System.ComponentModel.DataAnnotations;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace REST_Interface.Controllers
 {
@@ -138,6 +142,51 @@ namespace REST_Interface.Controllers
 
         }
 
+        [HttpPost("/Authenticate")]
+        public async Task<IActionResult> Authenticate([FromBody] BusinessDto businessObj)
+        {
+            
+            
+            if (businessObj == null)
+                return BadRequest();
+
+            Business? business = await _uow.BusinessRepository.GetByUsernameAndPasswordAsync(businessObj);
+            if (business == null)
+            {
+                return NotFound(new { Message = "User Not Found!" });
+            }
+
+            business.Token = CreateJwt(business);
+
+            return Ok(new
+            {
+                Token = business.Token,
+                Message = "Login Success!"
+            });
+        }
+
+        private string CreateJwt(Business business)
+        {
+            var jwtTokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes("LeberkaaaaaaaaasssPepi123456789LeberkasIstSoGeil123456");
+
+            var identity = new ClaimsIdentity(new Claim[]
+            {
+                new Claim(ClaimTypes.Name, business.UserName)
+            });
+
+            var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = identity,
+                Expires = DateTime.Now.AddDays(1),
+                SigningCredentials = credentials
+            };
+
+            var token = jwtTokenHandler.CreateToken(tokenDescriptor);
+            return jwtTokenHandler.WriteToken(token);
+        }
 
 
     }

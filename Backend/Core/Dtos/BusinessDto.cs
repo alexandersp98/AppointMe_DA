@@ -18,6 +18,8 @@ namespace Core.Dtos
 
         public string Password { get; set; } = string.Empty;
 
+        public string? Token { get; set; }
+
 
     }
 }

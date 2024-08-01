@@ -26,9 +26,7 @@ export class DevSiteComponent implements OnInit {
 
 
      //post test, FromBody
-
-
-    let business = new Business('testtest', 'test@gmail.com', '1234567SDAFDa');
+    let business = new Business('testtest3', 'test3@gmail.com', '1234567SDAFDaDD');
 
     const headers = new HttpHeaders()
     .append(
@@ -38,14 +36,14 @@ export class DevSiteComponent implements OnInit {
     const body=JSON.stringify(business);
     this.businessService.postBusiness(body, headers);
 
+
+    
     //login Check test, FromQuery
-
-
-    /*let params = new HttpParams().set('username', 'MusterMaxi')
+    let params = new HttpParams().set('username', 'MusterMaxi')
     .set('password', '123456Ab');
 
     this.businessService.LoginCheck(params);
-    */
+    console.log('Post succeded');
   }
 
 }

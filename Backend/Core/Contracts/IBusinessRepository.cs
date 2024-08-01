@@ -1,4 +1,5 @@
-﻿using Core.Entities;
+﻿using Core.Dtos;
+using Core.Entities;
 
 namespace Core.Contracts
 {
@@ -11,6 +12,7 @@ namespace Core.Contracts
         Task<List<Business>> GetAllAsync();
 
         Task<Business?> GetById(int businessId);
+        Task<Business?> GetByUsernameAndPasswordAsync(BusinessDto businessObj);
         Task<Business?> GetByUsernameAsync(string username);
     }
 }

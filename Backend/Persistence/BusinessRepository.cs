@@ -1,4 +1,5 @@
 ﻿using Core.Contracts;
+using Core.Dtos;
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -42,9 +43,16 @@ namespace Persistence
             return await _context.Businesses.Where(e => e.Id == businessId).FirstOrDefaultAsync();
         }
 
+        public async Task<Business?> GetByUsernameAndPasswordAsync(BusinessDto businessObj)
+        {
+            return await _context.Businesses.Where(b => b.UserName == businessObj.UserName && b.Password == businessObj.Password).FirstOrDefaultAsync();
+        }
+
         public async Task<Business?> GetByUsernameAsync(string username)
         {
             return await _context.Businesses.Where(b => b.UserName == username).FirstOrDefaultAsync();
         }
+
+
     }
 }

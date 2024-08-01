@@ -7,15 +7,17 @@
     <div id="logo">
         <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
         <span style="font-family: Int ExtraBold; font-size: 110px; margin-left: 10px; margin-top: 40px; margin-bottom: 40px;">Appoint</span>
-        <span style="font-family: Int ExtraLight; font-style: italic; font-size: 110px; margin-top: 40px;">Me</span>
+        <span style="font-family: Int ExtraLight; font-style: italic; font-size: 110px; margin-top: 40px; margin-bottom: 40px;">Me</span>
     </div>
     
-
-    <input id="inputUsername" placeholder="Username" required>
-    <input id="inputPassword" placeholder="Password" required>
-    <button id="btnLogin" onclick="console.log('Check Login')">Login</button>
-
-
+    <form [formGroup]="loginForm" (submit)="submitLogin()">
+        <div id="form">
+            <input type="tetxt" id="inputUsername" placeholder="Username" formControlName="userName" required>
+            <input type="tetxt"  id="inputPassword" placeholder="Password" formControlName="password" required>
+            <button type="submit"  id="btnLogin">Login</button>
+        </div>
+    </form>
+    
     <a style = "margin: 20px; font-weight: bold;" href="http://localhost:4200/resetPassword">Reset password</a>
     <a style = "font-weight: bold;" href="http://localhost:4200/createAccount">No Account? Create one here!</a>
 </div>
