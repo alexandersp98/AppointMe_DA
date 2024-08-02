@@ -33,10 +33,12 @@ namespace Persistence
             return await  _context.Customers.Where(c => c.Id == customerId).FirstOrDefaultAsync();
         }
 
-        public async Task<Customer?> GetByUserName(string userName)
+      
+
+        public async Task<List<Customer>> GetCustomersByUserName(string userName)
         {
             return await _context.Customers.Where(c => c.Business!.UserName == userName)
-                .FirstOrDefaultAsync();
+                .ToListAsync();
         }
     }
 }

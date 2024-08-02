@@ -2,16 +2,15 @@
 
 <button id="logOut" (click)="logOut()">log out</button>
 
-<div *ngFor="let business of businessService.list">
-    <p style="font-weight: bold; color: aqua;">GetAllBusinesses</p>
-    <p style="font-weight: bold;">id: </p>
-    <p>{{business.id}}</p>
-    <p style="font-weight: bold;">UserName: </p>
-    <p>{{business.userName}}</p>
-    <p style="font-weight: bold;">Email Address: </p>
-    <p>{{business.e_Mail_Address}}</p>
-    <p style="font-weight: bold;">Password</p>
-    <p>{{business.password}}</p>
+
+<div *ngFor="let customer of customerService.list">
+  <p style="font-weight: bold; color: aqua;">GetAllCustomers</p>
+  <p style="font-weight: bold;">LastName: </p>
+  <p>{{customer.lastName}}</p>
+  <p style="font-weight: bold;">Email Address: </p>
+  <p>{{customer.e_Mail_Address}}</p>
+  <p style="font-weight: bold;">Phone Number</p>
+  <p>{{customer.phoneNumber}}</p>
 </div>
 
 

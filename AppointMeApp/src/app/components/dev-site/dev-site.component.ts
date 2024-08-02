@@ -22,7 +22,7 @@ export class DevSiteComponent implements OnInit {
 
   ngOnInit(): void {
     this.businessService.refreshList();
-    this.customerService.refreshList();
+   // this.customerService.refreshList();
 
 
      //post test, FromBody
@@ -37,7 +37,7 @@ export class DevSiteComponent implements OnInit {
     this.businessService.postBusiness(body, headers);
 
 
-    
+
     //login Check test, FromQuery
     let params = new HttpParams().set('username', 'MusterMaxi')
     .set('password', '123456Ab');

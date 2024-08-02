@@ -29,13 +29,11 @@ namespace REST_Interface.Controllers
             {
                 customerDtos.Add(new CustomerDto()
                 {
-                    Id = cust.Id,
 
                     E_Mail_Address = cust.E_Mail_Address,
                     FirstName = cust.FirstName,
                     LastName = cust.LastName,
                     PhoneNumber = cust.PhoneNumber,
-                    Business_Id = cust.Business_Id
 
                 });
 
@@ -54,7 +52,6 @@ namespace REST_Interface.Controllers
 
             Customer newCustomer = new Customer()
             {
-                Business_Id = newCustomerDto.Business_Id,
                 E_Mail_Address = newCustomerDto.E_Mail_Address,
                 FirstName = newCustomerDto.FirstName,
                 LastName = newCustomerDto.LastName,
@@ -115,6 +112,40 @@ namespace REST_Interface.Controllers
 
                 return Ok();
             }
+
+
+        }
+
+
+        [HttpGet("/GetCustomersByBusinessUserName")]
+
+        public async Task<IActionResult> Get([FromQuery] string userName)
+        {
+
+            if (!(await _uow.BusinessRepository.ExistsAsync(userName)))
+            {
+                return BadRequest("this user does not exist");
+            }
+
+
+            var customers = await _uow.CustomerRepository.GetCustomersByUserName(userName);
+
+            List<CustomerDto> customerDto = new List<CustomerDto>();
+
+            foreach (var customer in customers)
+            {
+                customerDto.Add(new CustomerDto()
+                {
+                    FirstName = customer.FirstName,
+                    LastName = customer.LastName,
+                    E_Mail_Address = customer.E_Mail_Address,
+                    PhoneNumber = customer.PhoneNumber
+
+                });
+
+            }
+
+            return Ok(customerDto);
 
 
         }

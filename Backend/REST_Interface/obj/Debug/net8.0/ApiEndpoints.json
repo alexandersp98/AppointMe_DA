@@ -215,6 +215,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "REST_Interface.Controllers.CustomerController",
+    "Method": "Get",
+    "RelativePath": "GetCustomersByBusinessUserName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "REST_Interface.Controllers.MessageController",
     "Method": "Post",
     "RelativePath": "Message",

@@ -11,7 +11,6 @@ namespace Core.Dtos
 {
     public class CustomerDto
     {
-        public int Id { get; set; }
         public string FirstName { get; set; } = string.Empty;
 
 
@@ -23,8 +22,5 @@ namespace Core.Dtos
 
         public string PhoneNumber { get; set; } = string.Empty;
 
-
-
-        public int? Business_Id { get; set; }
     }
 }

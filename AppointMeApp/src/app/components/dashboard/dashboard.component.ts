@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BusinessService } from '../../services/business.service';
 import { CommonModule } from '@angular/common';
+import { HttpParams } from '@angular/common/http';
+import { CustomerService } from '../../services/customer.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +14,7 @@ import { CommonModule } from '@angular/common';
 
 
 export class DashboardComponent implements OnInit{
-  constructor(public businessService: BusinessService){}
+  constructor(public businessService: BusinessService, public customerService: CustomerService){}
 
   public userName: string = "";
 
@@ -21,11 +23,21 @@ export class DashboardComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.businessService.refreshList();
+
     this.businessService.getUserNameFromStore().subscribe(res => {
       let userNameFromToken = this.businessService.getUserNameFromToken();
       this.userName = res ||userNameFromToken;
     })
+
+    let params = new HttpParams().set('username', this.userName)
+    ;
+
+    this.customerService.refreshList(params);
+
+
+
   }
+
+
 
 }

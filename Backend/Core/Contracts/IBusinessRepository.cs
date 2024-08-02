@@ -16,5 +16,9 @@ namespace Core.Contracts
 
         Task<Business?> GetByUsernameAndPasswordAsync(BusinessDto businessObj);
         Task<Business?> GetByUsernameAsync(string username);
+
+
+        Task<bool> ExistsAsync(string userName);
+
     }
 }

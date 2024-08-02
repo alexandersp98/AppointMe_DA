@@ -8,15 +8,17 @@ import { Customer } from '../classes/customer.model';
 })
 export class CustomerService {
 
-  url: string = environment.apiBaseUrl+'GetAllCustomers';
+  url: string = environment.apiBaseUrl+'GetCustomersByBusinessUserName';
   list: Customer[] = [];
-  
+
   constructor(private http: HttpClient) { }
 
-  refreshList(){
-    this.http.get(this.url)
+  refreshList(params: any){
+
+
+    this.http.get(this.url, {params: params})
     .subscribe({
-      next: res => 
+      next: res =>
         {
           this.list = res as Customer[];
           console.log(res);

@@ -19,6 +19,8 @@ namespace Persistence
             _context.Businesses.Add(business);
         }
 
+        
+
         public void Delete(Business businessToDelete)
         {
             _context.Businesses.Remove(businessToDelete);
@@ -30,6 +32,12 @@ namespace Persistence
 
             return await _context.Businesses.AnyAsync(b => b.UserName == username && b.Password == password);
 
+        }
+
+        public async Task<bool> ExistsAsync(string userName)
+        {
+           return await _context.Businesses.AnyAsync
+                (b => b.UserName == userName);
         }
 
         public async Task<List<Business>> GetAllAsync()
