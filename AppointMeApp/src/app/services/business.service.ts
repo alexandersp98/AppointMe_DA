@@ -2,8 +2,9 @@ import { Business } from './../classes/business.model';
 import { Injectable, SkipSelf } from '@angular/core';
 import { HttpClient, HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpParams, HttpRequest } from '@angular/common/http';
 import { environment } from '../../environments/environment.development';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { JwtHelperService } from '@auth0/angular-jwt';
 
 
 @Injectable({
@@ -17,9 +18,11 @@ export class BusinessService{
   urlLoginCheck: string = environment.apiBaseUrl + 'BusinessLoginCheck';
   urlLogin: string = environment.apiBaseUrl + 'Authenticate';
   list: Business[] = [];
-
+  userNamePayload: any; 
+  
+  private userName$ = new BehaviorSubject<string>("")
   constructor(private http: HttpClient, private router: Router) {
-
+    this.userNamePayload = this.decodedToken();
    }
 
   refreshList(){
@@ -53,9 +56,9 @@ export class BusinessService{
     )
   }*/
 
-    storeToken(tokenValue: string){
-      localStorage.setItem('token', tokenValue)
-    }
+  storeToken(tokenValue: string){
+    localStorage.setItem('token', tokenValue)
+  }
 
   getToken(){
     return localStorage.getItem('token')
@@ -69,4 +72,28 @@ export class BusinessService{
     localStorage.clear();
     this.router.navigate(['login']);
   }
+
+  decodedToken(){
+    const jwtHelper = new JwtHelperService();
+    const token = this.getToken()!;
+    console.log(jwtHelper.decodeToken(token));
+    return jwtHelper.decodeToken(token);
+  }
+
+  getUserNameFromToken(){
+    if(this.userNamePayload)
+    {
+      return this.userNamePayload.unique_name;
+    }
+  }
+
+  public getUserNameFromStore(){
+    return this.userName$.asObservable();
+  }
+
+  public setUserNameForStore(userName:string){
+    this.userName$.next(userName);
+  }
+
+
 }

@@ -42,7 +42,8 @@ export class LoginComponent {
         next: (res) => {
           console.log(res.message)
           this.businessService.storeToken(res.token);
-          console.log(res.token);
+          const tokenPayload = this.businessService.decodedToken();
+          this.businessService.setUserNameForStore(tokenPayload.unique_name);
           this.router.navigate(['dashboard']);
         },
         error: (err) => {

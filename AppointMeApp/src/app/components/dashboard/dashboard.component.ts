@@ -14,12 +14,18 @@ import { CommonModule } from '@angular/common';
 export class DashboardComponent implements OnInit{
   constructor(public businessService: BusinessService){}
 
+  public userName: string = "";
+
   logOut(){
    this.businessService.signOut();
   }
 
   ngOnInit(): void {
     this.businessService.refreshList();
+    this.businessService.getUserNameFromStore().subscribe(res => {
+      let userNameFromToken = this.businessService.getUserNameFromToken();
+      this.userName = res ||userNameFromToken;
+    })
   }
 
 }
