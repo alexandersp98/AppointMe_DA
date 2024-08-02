@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "REST_Interface.Controllers.BusinessController",
+    "Method": "Authenticate",
+    "RelativePath": "Authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessObj",
+        "Type": "Core.Dtos.BusinessDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.BusinessController",
     "Method": "Post",
     "RelativePath": "Business",
     "HttpMethod": "POST",

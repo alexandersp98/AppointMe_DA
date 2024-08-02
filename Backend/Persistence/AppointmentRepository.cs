@@ -32,5 +32,13 @@ namespace Persistence
         {
             return await _context.Appointments.Where(c => c.Id == calendarId).FirstOrDefaultAsync();
         }
+
+        public async Task<Appointment?> GetByUserName(string userName)
+        {
+           return await _context.Appointments.Where(a => a.Business!.UserName == userName)
+                .FirstAsync();
+        }
+
+        
     }
 }

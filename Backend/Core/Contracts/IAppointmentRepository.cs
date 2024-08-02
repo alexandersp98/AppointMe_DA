@@ -13,5 +13,8 @@ namespace Core.Contracts
 
         Task<Appointment?> GetById(int calendarId);
 
+        Task<Appointment?> GetByUserName(string userName);
+
+
     }
 }

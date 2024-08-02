@@ -12,5 +12,7 @@ namespace Core.Contracts
 
         Task<Customer?> GetById(int customerId);
 
+        Task<Customer?> GetByUserName(string userName);
+
     }
 }

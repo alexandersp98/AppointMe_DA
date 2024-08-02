@@ -32,5 +32,11 @@ namespace Persistence
         {
             return await  _context.Customers.Where(c => c.Id == customerId).FirstOrDefaultAsync();
         }
+
+        public async Task<Customer?> GetByUserName(string userName)
+        {
+            return await _context.Customers.Where(c => c.Business!.UserName == userName)
+                .FirstOrDefaultAsync();
+        }
     }
 }

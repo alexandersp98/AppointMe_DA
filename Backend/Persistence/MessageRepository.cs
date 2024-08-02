@@ -32,5 +32,10 @@ namespace Persistence
         {
             return await _context.Messages.Where(m => m.Id == messageId).FirstOrDefaultAsync();
         }
+
+        public Task<Message?> GetByUserName(string userName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

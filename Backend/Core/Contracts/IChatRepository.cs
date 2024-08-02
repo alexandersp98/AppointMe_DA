@@ -12,6 +12,9 @@ namespace Core.Contracts
 
         Task<Chat?> GetById(int chatId);
 
+        Task<Chat?> GetByUserName(string userName);
+
+
 
     }
 }
