@@ -25,18 +25,22 @@ namespace Persistence
 
         public async Task<List<Appointment>> GetAllAsync()
         {
-            return await _context.Appointments.OrderBy(c => c.Appointment_Date).ToListAsync();
+            return await _context.Appointments
+                .OrderBy(c => c.Appointment_Date)
+                .ToListAsync();
+        }
+
+        public async Task<List<Appointment>> GetAppointmentsByUserName(string userName)
+        {
+            return await _context.Appointments
+                .Include(a => a.Customer)
+                .Where(a => a.Business!.UserName == userName)
+                .ToListAsync();
         }
 
         public async Task<Appointment?> GetById(int calendarId)
         {
             return await _context.Appointments.Where(c => c.Id == calendarId).FirstOrDefaultAsync();
-        }
-
-        public async Task<Appointment?> GetByUserName(string userName)
-        {
-           return await _context.Appointments.Where(a => a.Business!.UserName == userName)
-                .FirstAsync();
         }
 
         

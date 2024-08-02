@@ -12,8 +12,8 @@ namespace Core.Dtos
     {
         public int Id { get; set; }
 
-        public int? Business_Id { get; set; }
+        public BusinessWithoutTokenDto? Business { get; set; }
 
-        public int? Customer_Id { get; set; }
+        public CustomerDto? Customer { get; set; }
     }
 }

@@ -30,31 +30,89 @@ namespace REST_Interface.Controllers
                 appointmentDtos.Add(new AppointmentDto()
                 {
                     Id = app.Id,
-
                     Description = app.Description,
                     Appointment_Date = app.Appointment_Date,
+                    
 
 
                 });
 
             }
-
             return Ok(appointmentDtos);
+        }
 
+
+        [HttpGet("/GetAppointmentsByBusinessUserName")]
+        public async Task<IActionResult> Get([FromQuery] string userName)
+        {
+
+            if (!(await _uow.BusinessRepository.ExistsAsync(userName)))
+            {
+                return BadRequest("this user does not exist");
+            }
+
+
+            var appointments = await _uow.AppointmentRepository.GetAppointmentsByUserName(userName);
+
+            List<AppointmentDto> appointmentDto = new List<AppointmentDto>();
+
+            foreach (var appointment in appointments)
+            {
+                appointmentDto.Add(new AppointmentDto()
+                {
+
+                    Id = appointment.Id,
+                    Description= appointment.Description,
+                    Appointment_Date = appointment.Appointment_Date,
+                    Customer = new CustomerDto() 
+                    { 
+                        FirstName = appointment.Customer!.FirstName,
+                        E_Mail_Address = appointment.Customer.E_Mail_Address,
+                        LastName = appointment.Customer.LastName,
+                        PhoneNumber = appointment.Customer.PhoneNumber,
+                        Id = appointment.Id,
+                        
+                    },
+                    
+
+                });
+
+            }
+
+            return Ok(appointmentDto);
 
 
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] AppointmentDto newAppointmentDto)
+        public async Task<IActionResult> Post([FromQuery] string userName, [FromQuery] int customerId, [FromBody] AppointmentWithoutCustomerDto newAppointmentDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
+
+            int businessId = await _uow.BusinessRepository.GetIdPerUserNameAsync(userName);
+
+            if (businessId == 0)
+            {
+                return BadRequest("this business does not exist");
+            }
+
+
+            if (!await _uow.CustomerRepository.ExistAsync(customerId))
+            {
+                return BadRequest("this customer does not exist");
+            }
+
+            if(!await _uow.CustomerRepository.BelongsToBusinessAsnc(customerId, businessId))
+            {
+                return BadRequest("customer does not belong to business");
+            }
+
 
             Appointment newAppointment = new Appointment() {
             Description = newAppointmentDto.Description,
             Appointment_Date = newAppointmentDto.Appointment_Date,
-            Business_Id = newAppointmentDto.Business_Id,
-            Customer_Id = newAppointmentDto.Customer_Id,
+            Business_Id = businessId,
+            Customer_Id = customerId,
             };
 
 
@@ -86,7 +144,7 @@ namespace REST_Interface.Controllers
 
             }
 
-            return Ok();
+            return Ok("Success");
 
 
         }

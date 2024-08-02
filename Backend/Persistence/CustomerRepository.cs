@@ -18,9 +18,21 @@ namespace Persistence
             _context.Customers.Add(customer);
         }
 
+        public async Task<bool> BelongsToBusinessAsnc(int customerId, int businessId)
+        {
+            return await _context.Customers.Where(c => c.Id == customerId)
+                .AnyAsync(c => c.Business_Id == businessId);
+
+        }
+
         public void Delete(Customer customerToDelete)
         {
             _context.Customers.Remove(customerToDelete);
+        }
+
+        public async Task<bool> ExistAsync(int customerId)
+        {
+            return await _context.Customers.AnyAsync(x => x.Id == customerId);
         }
 
         public async Task<List<Customer>> GetAllAsync()
@@ -40,5 +52,7 @@ namespace Persistence
             return await _context.Customers.Where(c => c.Business!.UserName == userName)
                 .ToListAsync();
         }
+
+       
     }
 }

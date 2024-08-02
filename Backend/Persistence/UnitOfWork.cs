@@ -90,7 +90,7 @@ namespace Persistence
 
             if(entity is Customer customerToValidate)
             {
-                if(_dbContext.Customers.Any(c => c.E_Mail_Address == customerToValidate.E_Mail_Address && customerToValidate.Id != c.Id))
+                if(_dbContext.Customers.Any(c => c.E_Mail_Address == customerToValidate.E_Mail_Address && customerToValidate.Business_Id == c.Business_Id && customerToValidate.Id != c.Id))
                 {
                     throw new ValidationException(new ValidationResult($"The E-Mail address {customerToValidate.E_Mail_Address} already exists."
                         , new List<string> { nameof(Customer.E_Mail_Address) }), null, null);
@@ -150,16 +150,20 @@ namespace Persistence
             {
                 E_Mail_Address = "m.mustermann@gmail.net",
                 Password = "123456Ab",
-                UserName = "MusterMaxi"
+                UserName = "MusterMaxi",
+                FirstName = "Maximilian",
+                LastName = "Mustermann"
 
 
             };
 
             Business ent2 = new Business()
             {
-                E_Mail_Address = "m.mustermann2@gmail.net",
+                E_Mail_Address = "a.horvath@gmail.net",
                 Password = "123456aB",
-                UserName = "MusterMaxi2"
+                UserName = "horvathslos",
+                FirstName = "Anton",
+                LastName = "Horvath"
 
 
             };

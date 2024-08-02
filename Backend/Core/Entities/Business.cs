@@ -16,6 +16,11 @@ namespace Core.Entities
         public string UserName { get; set; } = string.Empty;
 
 
+        public string FirstName { get; set; } = string.Empty;
+
+        public string LastName { get; set; } = string.Empty;
+
+
         [Required]
         [RegularExpression("^[\\w-\\.]+@([\\w-]+\\.)[\\w-]{2,4}")]
 

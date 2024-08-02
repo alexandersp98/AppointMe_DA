@@ -18,6 +18,7 @@ namespace Persistence
             _context.Chats.Add(chat);
         }
 
+
         public void Delete(Chat chatToDelete)
         {
             _context.Chats.Remove(chatToDelete);
@@ -25,7 +26,10 @@ namespace Persistence
 
         public async Task<List<Chat>> GetAllAsync()
         {
-            return await _context.Chats.OrderBy(c => c.Business_Id).ToListAsync();
+            return await _context.Chats
+                .Include(c => c.Business)
+                .Include(c => c.Customer)
+                .OrderBy(c => c.Business_Id).ToListAsync();
         }
 
         public async Task<Chat?> GetById(int chatId)
@@ -33,10 +37,13 @@ namespace Persistence
             return await _context.Chats.Where(c => c.Id == chatId).FirstOrDefaultAsync();
         }
 
-        public async Task<Chat?> GetByUserName(string userName)
+        public async Task<List<Chat>> GetChatsByUserName(string userName)
         {
-            return await _context.Chats.Where(c => c.Business!.UserName == userName)
-                .FirstOrDefaultAsync();
+            return await _context.Chats
+                .Include(c => c.Business)
+                .Include(c => c.Customer)
+                .Where(c => c.Business!.UserName == userName)
+              .ToListAsync();
         }
     }
 }

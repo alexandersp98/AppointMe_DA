@@ -5,14 +5,13 @@ namespace Core.Contracts
     public interface IChatRepository
     {
         void Add(Chat chat);
-
         void Delete(Chat chatToDelete);
 
         Task<List<Chat>> GetAllAsync();
 
         Task<Chat?> GetById(int chatId);
 
-        Task<Chat?> GetByUserName(string userName);
+        Task<List<Chat>> GetChatsByUserName(string userName);
 
 
 

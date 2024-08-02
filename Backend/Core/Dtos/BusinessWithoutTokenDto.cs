@@ -1,14 +1,12 @@
-﻿using Core.Validations;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Core.Dtos
 {
-    public class BusinessDto
+    public class BusinessWithoutTokenDto
     {
 
         public int Id { get; set; }
@@ -17,13 +15,6 @@ namespace Core.Dtos
         public string FirstName { get; set; } = string.Empty;
 
         public string LastName { get; set; } = string.Empty;
-
-        public string E_Mail_Address { get; set; } = string.Empty;
-
-        public string Password { get; set; } = string.Empty;
-
-        public string? Token { get; set; }
-
 
     }
 }

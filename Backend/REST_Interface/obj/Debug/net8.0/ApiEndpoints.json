@@ -8,8 +8,18 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "newAppointmentDto",
-        "Type": "Core.Dtos.AppointmentDto",
+        "Type": "Core.Dtos.AppointmentWithoutCustomerDto",
         "IsRequired": true
       }
     ],
@@ -109,9 +119,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newChatDto",
-        "Type": "Core.Dtos.ChatDto",
-        "IsRequired": true
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -144,6 +159,11 @@
         "Name": "newCustomerDto",
         "Type": "Core.Dtos.CustomerDto",
         "IsRequired": true
+      },
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -212,6 +232,38 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.AppointmentController",
+    "Method": "Get",
+    "RelativePath": "GetAppointmentsByBusinessUserName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.ChatController",
+    "Method": "Get",
+    "RelativePath": "GetChatsByBusinessUserName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

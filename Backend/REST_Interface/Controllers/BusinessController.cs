@@ -39,7 +39,9 @@ namespace REST_Interface.Controllers
                     Id = business.Id,
                     UserName = business.UserName,
                     E_Mail_Address = business.E_Mail_Address,
-                    Password = business.Password
+                    Password = business.Password,
+                    FirstName = business.FirstName,
+                    LastName = business.LastName,
                 });
 
             }
@@ -68,6 +70,7 @@ namespace REST_Interface.Controllers
                 UserName = business.UserName,
                 E_Mail_Address = business.E_Mail_Address,
                 Password = business.Password
+                
             };
 
             return Ok(businessDto);
@@ -84,6 +87,8 @@ namespace REST_Interface.Controllers
                 E_Mail_Address = newBusinessDto.E_Mail_Address,
                 Password = newBusinessDto.Password,
                 UserName = newBusinessDto.UserName,
+                FirstName = newBusinessDto.FirstName,
+                LastName = newBusinessDto.LastName,
             };
 
             if (!Validator.TryValidateObject(newBusiness, new ValidationContext(newBusiness), results, true))

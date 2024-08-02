@@ -29,11 +29,12 @@ namespace REST_Interface.Controllers
             {
                 customerDtos.Add(new CustomerDto()
                 {
-
+                    Id = cust.Id,
                     E_Mail_Address = cust.E_Mail_Address,
                     FirstName = cust.FirstName,
                     LastName = cust.LastName,
                     PhoneNumber = cust.PhoneNumber,
+                    
 
                 });
 
@@ -46,9 +47,17 @@ namespace REST_Interface.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CustomerDto newCustomerDto)
+        public async Task<IActionResult> Post([FromBody] CustomerDto newCustomerDto, [FromQuery] string userName)
         {
             List<ValidationResult> results = new List<ValidationResult>();
+
+            int businessId = await _uow.BusinessRepository.GetIdPerUserNameAsync(userName);
+
+            if (businessId == 0)
+            {
+                return BadRequest("this business does not exist");
+            }
+
 
             Customer newCustomer = new Customer()
             {
@@ -56,6 +65,7 @@ namespace REST_Interface.Controllers
                 FirstName = newCustomerDto.FirstName,
                 LastName = newCustomerDto.LastName,
                 PhoneNumber = newCustomerDto.PhoneNumber,
+                Business_Id = businessId
 
             };
 
@@ -118,7 +128,6 @@ namespace REST_Interface.Controllers
 
 
         [HttpGet("/GetCustomersByBusinessUserName")]
-
         public async Task<IActionResult> Get([FromQuery] string userName)
         {
 
@@ -136,6 +145,8 @@ namespace REST_Interface.Controllers
             {
                 customerDto.Add(new CustomerDto()
                 {
+                    Id = customer.Id,
+
                     FirstName = customer.FirstName,
                     LastName = customer.LastName,
                     E_Mail_Address = customer.E_Mail_Address,
@@ -146,8 +157,6 @@ namespace REST_Interface.Controllers
             }
 
             return Ok(customerDto);
-
-
         }
 
 
