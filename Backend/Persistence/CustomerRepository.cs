@@ -30,6 +30,18 @@ namespace Persistence
             _context.Customers.Remove(customerToDelete);
         }
 
+        public async Task DeleteCascade(int customerId)
+        {
+            var messagesFromCustomer = await  _context.Messages.Where(m => m.Chat!.Customer_Id == customerId).ToListAsync();
+            var chatsFromCustomer = await _context.Chats.Where(c => c.Customer_Id == customerId).ToListAsync();
+            var appointmentsFromCustomer = await _context.Appointments.Where(a => a.Customer_Id == customerId).ToListAsync();
+
+
+            _context.Messages.RemoveRange(messagesFromCustomer);
+            _context.Chats.RemoveRange(chatsFromCustomer);
+            _context.Appointments.RemoveRange(appointmentsFromCustomer);
+        }
+
         public async Task<bool> ExistAsync(int customerId)
         {
             return await _context.Customers.AnyAsync(x => x.Id == customerId);

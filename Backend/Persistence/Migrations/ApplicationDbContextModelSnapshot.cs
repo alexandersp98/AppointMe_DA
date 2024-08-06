@@ -174,6 +174,57 @@ namespace Persistence.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("Core.Entities.FormularObject", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Business_Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CustomerDemands")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HouseNr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Residence")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("RowType")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ZipCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Business_Id");
+
+                    b.ToTable("FormularObjects");
+                });
+
             modelBuilder.Entity("Core.Entities.Message", b =>
                 {
                     b.Property<int>("Id")
@@ -242,6 +293,17 @@ namespace Persistence.Migrations
                     b.HasOne("Core.Entities.Business", "Business")
                         .WithMany()
                         .HasForeignKey("Business_Id");
+
+                    b.Navigation("Business");
+                });
+
+            modelBuilder.Entity("Core.Entities.FormularObject", b =>
+                {
+                    b.HasOne("Core.Entities.Business", "Business")
+                        .WithMany()
+                        .HasForeignKey("Business_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Business");
                 });

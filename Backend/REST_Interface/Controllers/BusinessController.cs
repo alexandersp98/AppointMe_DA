@@ -126,7 +126,7 @@ namespace REST_Interface.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromQuery] int businessId)
+        public async Task<IActionResult> Delete([FromQuery] int businessId, [FromQuery] bool deleteCascade)
         {
             Business? businessToDelete = await _uow.BusinessRepository.GetById(businessId);
 
@@ -138,7 +138,18 @@ namespace REST_Interface.Controllers
 
             else
             {
-                _uow.BusinessRepository.Delete(businessToDelete);
+
+                if(deleteCascade)
+                {
+                    await _uow.BusinessRepository.DeleteCascadeAsync(businessId);
+
+
+
+                }
+                
+                    _uow.BusinessRepository.Delete(businessToDelete);             
+
+
 
                 await _uow.SaveChangesAsync();
 

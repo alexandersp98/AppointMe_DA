@@ -63,6 +63,8 @@ namespace Persistence
 
        }
 
+        
+
         private void ValidateEntity(object entity)
         {       
             if(entity is Business entrepreneur)
@@ -284,6 +286,25 @@ namespace Persistence
             {
                 throw new Exception();
             }
+
+            FormularObject formularObject = new FormularObject()
+            {
+                CustomerDemands = "a Kistn Bia",
+                Business_Id = 1,
+                FirstName = "TEst",
+                LastName = "",
+                HouseNr = "12",
+                Residence = "Linz",
+                Street = "Linzer Street",
+                ZipCode = "4200",
+                
+
+
+            };
+
+            FormularObjectRepository.Add(formularObject);
+
+            await SaveChangesAsync();
 
 
             

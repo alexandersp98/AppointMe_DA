@@ -56,6 +56,33 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "FormularObjects",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CustomerDemands = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Residence = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HouseNr = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Business_Id = table.Column<int>(type: "int", nullable: false),
+                    RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FormularObjects", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_FormularObjects_Businesses_Business_Id",
+                        column: x => x.Business_Id,
+                        principalTable: "Businesses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Appointments",
                 columns: table => new
                 {
@@ -155,6 +182,11 @@ namespace Persistence.Migrations
                 column: "Business_Id");
 
             migrationBuilder.CreateIndex(
+                name: "IX_FormularObjects_Business_Id",
+                table: "FormularObjects",
+                column: "Business_Id");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Messages_Chat_Id",
                 table: "Messages",
                 column: "Chat_Id");
@@ -165,6 +197,9 @@ namespace Persistence.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Appointments");
+
+            migrationBuilder.DropTable(
+                name: "FormularObjects");
 
             migrationBuilder.DropTable(
                 name: "Messages");

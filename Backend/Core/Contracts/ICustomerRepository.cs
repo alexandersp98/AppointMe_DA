@@ -7,6 +7,7 @@ namespace Core.Contracts
         void Add(Customer customer);
         Task<bool> BelongsToBusinessAsnc(int customerId, int businessId);
         void Delete(Customer customerToDelete);
+        Task DeleteCascade(int customerId);
         Task<bool> ExistAsync(int customerId);
         Task<List<Customer>> GetAllAsync();
 

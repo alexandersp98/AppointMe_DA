@@ -163,7 +163,7 @@ namespace REST_Interface.Controllers
 
 
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromQuery] int chatId)
+        public async Task<IActionResult> Delete([FromQuery] int chatId, [FromQuery] bool deleteCascade)
         {
             Chat? chatToDelete = await _uow.ChatRepository.GetById(chatId);
 
@@ -175,6 +175,13 @@ namespace REST_Interface.Controllers
 
             else
             {
+                if (deleteCascade)
+                {
+                    await _uow.ChatRepository.DeleteCascadeAsync(chatId);
+
+                }
+
+
                 _uow.ChatRepository.Delete(chatToDelete);
 
                 await _uow.SaveChangesAsync();

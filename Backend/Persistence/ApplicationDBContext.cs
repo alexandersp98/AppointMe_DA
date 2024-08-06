@@ -17,6 +17,7 @@ namespace Persistence
 
         public DbSet<Customer> Customers => Set<Customer>();
 
+        public DbSet<FormularObject> FormularObjects => Set<FormularObject>();
 
 
         IConfiguration _config;

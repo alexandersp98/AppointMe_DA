@@ -20,5 +20,6 @@ namespace Core.Contracts
 
         Task<bool> ExistsAsync(string userName);
         Task<int> GetIdPerUserNameAsync(string userName);
+        Task DeleteCascadeAsync(int businessId);
     }
 }

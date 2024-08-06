@@ -10,11 +10,15 @@ namespace Persistence
         public FormularObjectRepository(ApplicationDbContext context)
         {
             this._context = context;
+
+            
         }
+
+        
 
         public void Add(FormularObject formularObject)
         {
-            throw new NotImplementedException();
+            _context.Add(formularObject);
         }
 
         public void Delete(FormularObject formularObject)

@@ -27,6 +27,25 @@ namespace Persistence
             
         }
 
+        public async Task DeleteCascadeAsync(int businessId)
+        {
+            var customersFromBusiness = await _context.Customers.Where(c => c.Business_Id == businessId).ToListAsync();
+            var appointmentsFromBusiness = await _context.Appointments.Where(a => a.Business_Id == businessId).ToListAsync();
+            var chatsFromBusiness = await _context.Chats.Where(c => c.Business_Id == businessId).ToListAsync();
+            var formularsFromBusiness = await _context.FormularObjects.Where(f => f.Business_Id == businessId).ToListAsync();
+            var messagesFromBusiness = await _context.Messages.Where(m => m.Chat!.Business_Id == businessId).ToListAsync();
+
+
+            _context.Messages.RemoveRange(messagesFromBusiness);
+            _context.Chats.RemoveRange(chatsFromBusiness);
+            _context.FormularObjects.RemoveRange(formularsFromBusiness);
+            _context.Appointments.RemoveRange(appointmentsFromBusiness);
+            _context.Customers.RemoveRange(customersFromBusiness);
+
+
+        
+        }
+
         public async Task<bool> ExistsAsync(string username, string password)
         {
 

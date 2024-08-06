@@ -24,6 +24,14 @@ namespace Persistence
             _context.Chats.Remove(chatToDelete);
         }
 
+        public async Task DeleteCascadeAsync(int chatId)
+        {
+            var messagesFromChat = await _context.Messages.Where(m => m.Chat_Id == chatId).ToListAsync();
+
+            _context.Messages.RemoveRange(messagesFromChat);
+
+        }
+
         public async Task<List<Chat>> GetAllAsync()
         {
             return await _context.Chats

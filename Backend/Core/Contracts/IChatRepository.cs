@@ -6,7 +6,7 @@ namespace Core.Contracts
     {
         void Add(Chat chat);
         void Delete(Chat chatToDelete);
-
+        Task DeleteCascadeAsync(int chatId);
         Task<List<Chat>> GetAllAsync();
 
         Task<Chat?> GetById(int chatId);
