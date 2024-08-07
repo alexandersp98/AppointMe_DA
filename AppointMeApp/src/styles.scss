@@ -31,3 +31,23 @@ html, body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --fc-border-color: #222222;
+  --fc-button-border-color: #222222;
+  --fc-event-border-color: #000;
+  --fc-button-bg-color: #222222;
+  --fc-event-bg-color: #424242;
+  --fc-small-font-size: 1em;
+  --fc-today-bg-color: #b0b0b0;
+}
+
+.fc table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  font-size: 1.1em;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

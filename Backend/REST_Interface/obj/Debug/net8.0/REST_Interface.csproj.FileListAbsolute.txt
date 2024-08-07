@@ -300,3 +300,4 @@ C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\new project\AppointMe_DA\Backen
 C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\new project\AppointMe_DA\Backend\REST_Interface\obj\Debug\net8.0\ref\REST_Interface.dll
 C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\new project\AppointMe_DA\Backend\REST_Interface\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Mein_privater_Ordner\Schule\Diplom\Appoint_Me_Da\AppointMe_DA\Backend\REST_Interface\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Andreas Fuchs-Eisner\Desktop\HTL\Diplom\Project\AppointMe_DA\Backend\REST_Interface\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

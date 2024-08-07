@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {}
+    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
+    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",

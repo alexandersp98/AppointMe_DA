@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SRk4lHtRA3s=",
+  "dgSpecHash": "hzyB7EeLSbQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
+  "projectFilePath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

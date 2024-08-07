@@ -4457,11 +4457,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
+      "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\ConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4478,11 +4478,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Core\\Core.csproj"
+            "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj"
             },
-            "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\new project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
+            "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
             }
           }
         }
