@@ -1,29 +1,35 @@
-<span style="float: left; margin: 40px; font-weight: bolder; font-size: 20px;">EASY</span>
-<span style="float: right;  margin: 40px; font-weight: bolder; font-size: 20px">BOOKING</span>
+<div class="container">
+    <header>
+        <span style="float: left; margin: 40px; font-weight: bolder; font-size: 20px;">EASY</span>
+        <span style="float: right; margin: 40px; font-weight: bolder; font-size: 20px">BOOKING</span>
+    </header>
 
+    <main>
+        <div class="loginForm">
+            <span style="margin-top: 40px; font-weight: bolder; font-size: 40px;">Log in to</span>
+            <div id="logo">
+                <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
+                <span style="font-family: Int ExtraBold; font-size: 110px; margin-left: 10px; margin-top: 40px; margin-bottom: 40px;">Appoint</span>
+                <span style="font-family: Int ExtraLight; font-style: italic; font-size: 110px; margin-top: 40px; margin-bottom: 40px;">Me</span>
+            </div>
 
-<div class="loginForm">
-    <span style="margin-top: 40px; font-weight: bolder; font-size: 40px;">Log in to</span>
-    <div id="logo">
-        <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
-        <span style="font-family: Int ExtraBold; font-size: 110px; margin-left: 10px; margin-top: 40px; margin-bottom: 40px;">Appoint</span>
-        <span style="font-family: Int ExtraLight; font-style: italic; font-size: 110px; margin-top: 40px; margin-bottom: 40px;">Me</span>
-    </div>
-    
-    <form [formGroup]="loginForm" (submit)="submitLogin()">
-        <div id="form">
-            <input type="tetxt" id="inputUsername" placeholder="Username" formControlName="userName" required>
-            <input type="tetxt"  id="inputPassword" placeholder="Password" formControlName="password" required>
-            <button type="submit"  id="btnLogin">Login</button>
+            <form [formGroup]="loginForm" (submit)="submitLogin()">
+                <div id="form">
+                    <input type="tetxt" id="inputUsername" placeholder="Username" formControlName="userName" required>
+                    <input type="tetxt" id="inputPassword" placeholder="Password" formControlName="password" required>
+                    <button type="submit" id="btnLogin">Login</button>
+                </div>
+            </form>
+            <div class="links">
+                <a style="margin-bottom: 20px; margin-left: 50px; width: 110px; font-weight: bold;" href="http://localhost:4200/resetPassword">Reset password</a>
+                <a style="font-weight: bold; width: 200px;" href="http://localhost:4200/createAccount">No Account? Create one here!</a>
+            </div>
         </div>
-    </form>
-    
-    <a style = "margin: 20px; font-weight: bold;" href="http://localhost:4200/resetPassword">Reset password</a>
-    <a style = "font-weight: bold;" href="http://localhost:4200/createAccount">No Account? Create one here!</a>
-</div>
+    </main>
 
-<div id="footer">
-    <span id= "footerLeft">appointmesupport&#64;gmail.com</span>
-    <span id= "footerMiddle" >+436601234554</span>
-    <span id= "footerRight">www.appointme.com</span>
+    <footer id="footer">
+        <span id="footerLeft">appointmesupport&#64;gmail.com</span>
+        <span id="footerMiddle">+436601234554</span>
+        <span id="footerRight">www.appointme.com</span>
+    </footer>
 </div>

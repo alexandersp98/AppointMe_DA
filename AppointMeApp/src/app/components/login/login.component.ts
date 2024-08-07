@@ -4,7 +4,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { BusinessService } from '../../services/business.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Business } from '../../classes/business.model';
-import { HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({

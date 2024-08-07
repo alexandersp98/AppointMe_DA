@@ -17,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     CalendarComponent, 
     FormularComponent, 
     MatSnackBarModule, 
-    HttpClientModule],
+    HttpClientModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -25,5 +26,4 @@ import { HttpClientModule } from '@angular/common/http';
 
 export class AppComponent {
   title = 'AppointMe';
-  
 }

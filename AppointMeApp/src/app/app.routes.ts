@@ -26,7 +26,7 @@ export const routes: Routes = [
 
     {
         path: 'calendar',
-        component: CalendarComponent
+        component: CalendarComponent, canActivate: [authGuard]
     },
 
     {

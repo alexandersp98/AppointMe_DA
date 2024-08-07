@@ -1,21 +1,21 @@
 <div class="container">
-    <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
-    <p id="text">Create an account here</p>
-    <form [formGroup]="registerForm" (submit)="submitRegistration()">
-        <div id="form">
-            <input type="text" id="inputUsername" placeholder="Username" formControlName="userName" required>
-            <input type="email" id="inputEmail" placeholder="Email" formControlName="e_Mail_Address" required>
-            <input type="text" id="inputPassword" placeholder="Password" formControlName="password" required>
-            <button type="submit" id="btnCreateAccount" >Create account</button>
-        </div>
-    </form>
-    <a style = "margin: 10px; font-weight: bold;" href="http://localhost:4200/login">Cancel</a>
-    <p id="smallText">By clicking "Create account" you agree to the AppointMe TOS and Privacy Policy.</p>
-</div>
-
-
-<div id="footer">
-    <span id= "footerLeft">appointmesupport&#64;gmail.com</span>
-    <span id= "footerMiddle" >+436601234554</span>
-    <span id= "footerRight">www.appointme.com</span>
+    <main>
+        <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
+        <p id="text">Create an account here</p>
+        <form [formGroup]="registerForm" (submit)="submitRegistration()">
+            <div id="form">
+                <input type="text" id="inputUsername" placeholder="Username" formControlName="userName" required>
+                <input type="email" id="inputEmail" placeholder="Email" formControlName="e_Mail_Address" required>
+                <input type="text" id="inputPassword" placeholder="Password" formControlName="password" required>
+                <button type="submit" id="btnCreateAccount">Create account</button>
+            </div>
+        </form>
+        <a style="margin: 10px; font-weight: bold;" href="http://localhost:4200/login">Cancel</a>
+        <p id="smallText">By clicking "Create account" you agree to the AppointMe TOS and Privacy Policy.</p>
+    </main>
+    <footer id="footer">
+        <span id="footerLeft">appointmesupport&#64;gmail.com</span>
+        <span id="footerMiddle">+436601234554</span>
+        <span id="footerRight">www.appointme.com</span>
+    </footer>
 </div>
