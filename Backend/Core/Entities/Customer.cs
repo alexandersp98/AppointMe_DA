@@ -28,6 +28,13 @@ namespace Core.Entities
         public string PhoneNumber { get; set; } = string.Empty;
 
 
+        public string HouseNr { get; set; } = string.Empty;
+
+        public string Street { get; set; } = string.Empty;
+
+
+        public string Residence { get; set; } = string.Empty;
+
 
         [ForeignKey(nameof(Business_Id))]
         public Business? Business { get; set; }

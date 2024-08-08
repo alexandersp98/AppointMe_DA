@@ -26,7 +26,7 @@ namespace Persistence
         public async Task<List<Appointment>> GetAllAsync()
         {
             return await _context.Appointments
-                .OrderBy(c => c.Appointment_Date)
+                .OrderBy(c => c.StartDate)
                 .ToListAsync();
         }
 

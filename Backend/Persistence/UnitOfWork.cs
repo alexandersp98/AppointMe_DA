@@ -223,10 +223,14 @@ namespace Persistence
 
             Appointment appointment = new Appointment()
             {
-                Appointment_Date = DateTime.Now,
-                Description = "Termin von Musterfrau",
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now.AddDays(1),
+                Title = "Termin von Musterfrau",
                 Business_Id = ent.Id,
                 Customer_Id = customer.Id,
+                AllDay = true,
+                Description = "Autokauf",
+                
 
             };
 
@@ -287,26 +291,7 @@ namespace Persistence
                 throw new Exception();
             }
 
-            FormularObject formularObject = new FormularObject()
-            {
-                CustomerDemands = "a Kistn Bia",
-                Business_Id = 1,
-                FirstName = "TEst",
-                LastName = "",
-                HouseNr = "12",
-                Residence = "Linz",
-                Street = "Linzer Street",
-                ZipCode = "4200",
-                
-
-
-            };
-
-            FormularObjectRepository.Add(formularObject);
-
-            await SaveChangesAsync();
-
-
+            
             
         }
     }

@@ -31,7 +31,9 @@ namespace REST_Interface.Controllers
                 {
                     Id = app.Id,
                     Description = app.Description,
-                    Appointment_Date = app.Appointment_Date,
+                    StartDate = app.StartDate,
+                    EndDate = app.EndDate,
+                    Title = app.Title
                     
 
 
@@ -63,7 +65,9 @@ namespace REST_Interface.Controllers
 
                     Id = appointment.Id,
                     Description= appointment.Description,
-                    Appointment_Date = appointment.Appointment_Date,
+                    StartDate = appointment.StartDate,
+                    EndDate = appointment.EndDate,
+                    Title = appointment.Title,
                     Customer = new CustomerDto() 
                     { 
                         FirstName = appointment.Customer!.FirstName,
@@ -110,7 +114,10 @@ namespace REST_Interface.Controllers
 
             Appointment newAppointment = new Appointment() {
             Description = newAppointmentDto.Description,
-            Appointment_Date = newAppointmentDto.Appointment_Date,
+            StartDate = newAppointmentDto.StartDate,
+            EndDate = newAppointmentDto.EndDate,
+            Title = newAppointmentDto.Title,
+            AllDay = newAppointmentDto.AllDay,
             Business_Id = businessId,
             Customer_Id = customerId,
             };

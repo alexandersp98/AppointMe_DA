@@ -42,6 +42,9 @@ namespace Persistence.Migrations
                     LastName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     E_Mail_Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HouseNr = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Residence = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Business_Id = table.Column<int>(type: "int", nullable: true),
                     RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
@@ -61,13 +64,13 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CustomerDemands = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Residence = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    HouseNr = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FirstNameField = table.Column<int>(type: "int", nullable: false),
+                    LastNameField = table.Column<int>(type: "int", nullable: false),
+                    Email_AdressField = table.Column<int>(type: "int", nullable: false),
+                    PhoneNumberField = table.Column<int>(type: "int", nullable: false),
+                    HouseNrField = table.Column<int>(type: "int", nullable: false),
+                    StreetField = table.Column<int>(type: "int", nullable: false),
+                    ResidenceField = table.Column<int>(type: "int", nullable: false),
                     Business_Id = table.Column<int>(type: "int", nullable: false),
                     RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
@@ -88,10 +91,13 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Appointment_Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Customer_Id = table.Column<int>(type: "int", nullable: true),
                     Business_Id = table.Column<int>(type: "int", nullable: true),
+                    AllDay = table.Column<bool>(type: "bit", nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },
                 constraints: table =>

@@ -9,20 +9,21 @@ namespace Core.Entities
 {
     public class FormularObject: EntityObject
     {
-        public string FirstName { get; set; } = string.Empty;
 
-        public string LastName { get; set; } = string.Empty;
+        public int FirstNameField { get; set; }
 
-        public string ZipCode { get; set; } = string.Empty;
+        public int LastNameField { get; set; }
 
-        public string CustomerDemands { get; set; } = string.Empty;
+        public int Email_AdressField { get; set; }
 
-        public string Residence { get; set; } = string.Empty;
+        public int PhoneNumberField { get; set; }
 
-        public string Street { get; set; } = string.Empty;
+        public int HouseNrField { get; set; }
 
-        public string HouseNr { get; set; } = string.Empty;
+        public int StreetField { get; set; }
 
+
+        public int ResidenceField { get; set; }
 
 
         [ForeignKey(nameof(Business_Id))]

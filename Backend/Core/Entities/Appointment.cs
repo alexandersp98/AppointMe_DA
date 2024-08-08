@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Appointment : EntityObject
+    public partial class Appointment : EntityObject
     {
-        public DateTime Appointment_Date { get; set; }
+        [MaxLength(50)]
+        public string Title { get; set; } = string.Empty;
 
         [ForeignKey(nameof(Customer_Id))]
         public Customer? Customer { get; set; }
@@ -20,13 +21,25 @@ namespace Core.Entities
         public Business? Business { get; set; }
 
 
-        [StringLength(300)]
-        public string Description { get; set; } = string.Empty;
-
-
         public int? Customer_Id { get; set; }
 
         public int? Business_Id { get; set; }
+
+
+        public bool AllDay { get; set; }
+
+
+        public DateTime StartDate { get; set; }
+
+
+        public DateTime EndDate { get; set; }
+
+        
+        [MaxLength(500)]
+        public string Description { get; set; } = string.Empty;
+
+
+
     }
 
 }
