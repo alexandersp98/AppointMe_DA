@@ -14,8 +14,6 @@ export class CustomerService {
   constructor(private http: HttpClient) { }
 
   refreshList(params: any){
-
-
     this.http.get(this.url, {params: params})
     .subscribe({
       next: res =>

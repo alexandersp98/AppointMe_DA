@@ -1,18 +1,23 @@
-import { Component, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, signal, ViewChild } from '@angular/core';
 import { FullCalendarComponent, FullCalendarModule } from '@fullcalendar/angular'; // Import FullCalendarComponent
-import { CalendarOptions } from '@fullcalendar/core';
+import { CalendarOptions, EventApi, EventInput } from '@fullcalendar/core';
 import { MatDialog } from '@angular/material/dialog';
 import { EventDialogComponent } from './event-dialog/event-dialog.component';
 
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import { CommonModule } from '@angular/common';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { BusinessService } from '../../services/business.service';
+import { AppointmentsService } from '../../services/appointments.service';
+import { HttpParams } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-calendar',
@@ -21,7 +26,7 @@ import { MatNativeDateModule } from '@angular/material/core';
   styleUrls: ['./calendar.component.scss'],
   imports: [
     CommonModule,
-    FullCalendarModule, // Import FullCalendarModule here
+    FullCalendarModule, 
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
@@ -31,22 +36,55 @@ import { MatNativeDateModule } from '@angular/material/core';
     EventDialogComponent
   ]
 })
-export class CalendarComponent {
+export class CalendarComponent implements OnInit {
+
+  public userName: string = "";
+  public eventList: EventInput[] = [];
+
   @ViewChild(FullCalendarComponent) calendarComponent!: FullCalendarComponent;
 
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
     plugins: [dayGridPlugin, interactionPlugin],
     dateClick: this.handleDateClick.bind(this),
-    events: [
-      { title: 'event 1', date: '2024-08-06' },
-      { title: 'event 2', start: '2024-08-08T16:00:00', end: '2024-08-09T13:00:00' },
-      { title: 'event 3', date: '2024-08-06T13:00:00' },
-      { title: 'event 4', date: '2024-08-06T09:00:00', url: 'https://github.com/' }
-    ]
+    initialEvents: this.eventList,  // This will be updated dynamically
   };
 
-  constructor(public dialog: MatDialog) { }
+  constructor(
+    public dialog: MatDialog,
+    public businessService: BusinessService,
+    public appointmentService: AppointmentsService,
+    private cdr: ChangeDetectorRef  // Inject ChangeDetectorRef
+  ) {}
+
+  ngOnInit(): void {
+    this.businessService.getUserNameFromStore().subscribe(res => {
+      let userNameFromToken = this.businessService.getUserNameFromToken();
+      this.userName = res || userNameFromToken;
+
+      let params = new HttpParams().set('username', this.userName);
+      
+      this.appointmentService.GetAppointmentsByBusinessUserName(params).subscribe({
+        next: (events: EventInput[]) => {
+          this.eventList = events;
+      
+          // Get the calendar API
+          const calendarApi = this.calendarComponent.getApi();
+      
+          // Remove all existing events
+          calendarApi.removeAllEvents();
+      
+          // Add new events
+          events.forEach(event => {
+            calendarApi.addEvent(event);
+          });
+          
+          this.cdr.detectChanges();  // Manually trigger change detection
+        },
+        error: err => console.log(err)
+      });
+    });
+  }
 
   handleDateClick(arg: any): void {
     const dialogRef = this.dialog.open(EventDialogComponent, {
@@ -64,7 +102,7 @@ export class CalendarComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result && this.calendarComponent) {
-        const calendarApi = this.calendarComponent.getApi(); // Use FullCalendar API
+        const calendarApi = this.calendarComponent.getApi();
 
         const startDate = new Date(result.startDate);
         if (result.startTime) {
