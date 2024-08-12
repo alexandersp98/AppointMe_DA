@@ -3,6 +3,8 @@ import { BusinessService } from '../../services/business.service';
 import { CommonModule } from '@angular/common';
 import { HttpParams } from '@angular/common/http';
 import { CustomerService } from '../../services/customer.service';
+import { AppointmentsService } from '../../services/appointments.service';
+import { ChatService } from '../../services/chat.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,7 +16,7 @@ import { CustomerService } from '../../services/customer.service';
 
 
 export class DashboardComponent implements OnInit{
-  constructor(public businessService: BusinessService, public customerService: CustomerService){}
+  constructor(public businessService: BusinessService, public appointmentService: AppointmentsService, public chatService: ChatService){}
 
   public userName: string = "";
 
@@ -29,15 +31,10 @@ export class DashboardComponent implements OnInit{
       this.userName = res ||userNameFromToken;
     })
 
-    let params = new HttpParams().set('username', this.userName)
-    ;
+    let params = new HttpParams().set('username', this.userName);
 
-    this.customerService.refreshList(params);
-
-
-
+    this.appointmentService.refreshList(params);
+    this.chatService.getAllChats();
   }
-
-
 
 }

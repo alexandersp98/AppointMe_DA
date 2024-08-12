@@ -95,8 +95,8 @@ namespace Persistence.Migrations
                     Customer_Id = table.Column<int>(type: "int", nullable: true),
                     Business_Id = table.Column<int>(type: "int", nullable: true),
                     AllDay = table.Column<bool>(type: "bit", nullable: false),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Start = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    End = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     RowType = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
                 },

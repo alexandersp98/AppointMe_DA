@@ -45,36 +45,28 @@ namespace REST_Interface.Controllers
                 });
 
             }
-
             return Ok(businessDtos);
 
-
-
         }
 
-        [HttpGet("/BusinessLoginCheck")]
-        public async Task<IActionResult> Get([FromQuery] string username,[FromQuery] string password)
+
+
+      
+        [HttpGet("/GetBusinessIdByUsername")]
+        public async Task<IActionResult> Get([FromQuery] string userName)
         {
-            if(!(await _uow.BusinessRepository.ExistsAsync(username, password)))
+
+            if (!(await _uow.BusinessRepository.ExistsAsync(userName)))
             {
-
-                return Ok(0);
-
+                return BadRequest("this user does not exist");
             }
 
-            Business? business = await _uow.BusinessRepository.GetByUsernameAsync(username);
+            var business = await _uow.BusinessRepository.GetByUsernameAsync(userName);
 
-            BusinessDto businessDto = new BusinessDto()
-            {
-                Id = business!.Id,
-                UserName = business.UserName,
-                E_Mail_Address = business.E_Mail_Address,
-                Password = business.Password
-                
-            };
-
-            return Ok(businessDto);
+            return Ok(business.Id);
         }
+
+
 
 
         [HttpPost]

@@ -44,7 +44,7 @@ namespace Persistence.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime>("EndDate")
+                    b.Property<DateTime>("End")
                         .HasColumnType("datetime2");
 
                     b.Property<byte[]>("RowType")
@@ -52,7 +52,7 @@ namespace Persistence.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("rowversion");
 
-                    b.Property<DateTime>("StartDate")
+                    b.Property<DateTime>("Start")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")

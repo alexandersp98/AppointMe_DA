@@ -1,17 +1,57 @@
-<p>Hello to the {{userName}}</p>
+<div class="container">
+  <div class="header">
+    <a href="http://localhost:4200/dashboard">
+      <img id="handLogo" src="/assets/images/Hand Logo.png" alt="Logo">
+    </a>
+    <input id="searchbar" type="text" placeholder="Search">
 
-<button id="logOut" (click)="logOut()">log out</button>
+    <span id="hello">{{userName}}</span>
 
+    <div class="textLogo">
+      <span class="textBold">Dash</span>
+      <span class="textItalic">board</span>
+    </div>
 
-<div *ngFor="let customer of customerService.list">
-  <p style="font-weight: bold; color: aqua;">GetAllCustomers</p>
-  <p style="font-weight: bold;">LastName: </p>
-  <p>{{customer.lastName}}</p>
-  <p style="font-weight: bold;">Email Address: </p>
-  <p>{{customer.e_Mail_Address}}</p>
-  <p style="font-weight: bold;">Phone Number</p>
-  <p>{{customer.phoneNumber}}</p>
+    <button id="logOut" (click)="logOut()">log out</button>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <a href="http://localhost:4200/chat">
+        <img id="chatIcon" src="/assets/images/Chat.png" alt="ChatIcon">
+      </a>
+      <a href="http://localhost:4200/calendar">
+        <img id="calendarIcon" src="/assets/images/Calendar.png" alt="CalendarIcon">
+      </a>
+      <a href="http://localhost:4200/contacts">
+        <img id="contactsIcon" src="/assets/images/Contacts.png" alt="ContactsIcon">
+      </a>
+      <a href="http://localhost:4200/settings">
+        <img id="settingsIcon" src="/assets/images/Settings.png" alt="SettingsIcon">
+      </a>
+    </div>
+
+    <div class="dashboard">
+      <div class="dashboard-container">
+        <div class="appointments">
+          <p class="section-title">Appointments</p>
+          <div id="appointmentInstance" *ngFor="let appointment of appointmentService.list">
+            <p>Title: {{appointment.title}}</p>
+            <p>Description: {{appointment.description}}</p>
+            <p>All Day: {{appointment.allDay}}</p>
+            <p>Start: {{appointment.start}}</p>
+            <p>End: {{appointment.end}}</p>
+          </div>
+        </div>
+
+        <div class="chats">
+          <p class="section-title">Chats</p>
+          <div id="chatInstance" *ngFor="let chat of chatService.list">
+            <p>Customer: {{chat.customer.firstName}} {{chat.customer.lastName}}</p>
+            <p>Id: {{chat.id}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-

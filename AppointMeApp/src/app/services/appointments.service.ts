@@ -1,9 +1,9 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { EventInput } from '@fullcalendar/core';
 import { environment } from '../../environments/environment.development';
-import { Appointment } from '../classes/appointment';
+import { Appointment } from '../classes/appointment.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +13,20 @@ export class AppointmentsService {
   constructor(private http: HttpClient) {}
 
   urlAllAppointmentsByBusinessUserName: string = environment.apiBaseUrl + 'GetAppointmentsByBusinessUserName';
+  urlCreateAppointment: string = environment.apiBaseUrl + 'CreateAppointment';
+  list: Appointment[] = [];
+
+  refreshList(params: any){
+    this.http.get(this.urlAllAppointmentsByBusinessUserName, {params: params})
+    .subscribe({
+      next: res =>
+        {
+          this.list = res as Appointment[];
+          console.log(res);
+        },
+      error: err => {console.log(err)}
+    })
+  }
 
   GetAppointmentsByBusinessUserName(params: HttpParams): Observable<EventInput[]> {
     return new Observable<EventInput[]>((observer) => {
@@ -44,5 +58,9 @@ export class AppointmentsService {
         }
       });
     });
+  }
+
+  createAppointment(appointment: any, params: HttpParams, headers: HttpHeaders): Observable<any> {
+    return this.http.post<any>(this.urlCreateAppointment, appointment, { params, headers, responseType: 'text' as 'json' });
   }
 }

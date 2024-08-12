@@ -12,10 +12,10 @@ namespace Core.Entities
     {
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            if(StartDate > EndDate)
+            if(Start > End)
             {
                 yield return new ValidationResult("The start date is later than the end date",
-                    new List<string> { nameof(StartDate), nameof(EndDate) });
+                    new List<string> { nameof(Start), nameof(End) });
 
             }
 

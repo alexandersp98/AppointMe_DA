@@ -31,12 +31,10 @@ namespace REST_Interface.Controllers
                 {
                     Id = app.Id,
                     Description = app.Description,
-                    StartDate = app.StartDate,
-                    EndDate = app.EndDate,
+                    AllDay = app.AllDay,
+                    Start = app.Start,
+                    End = app.End,
                     Title = app.Title
-                    
-
-
                 });
 
             }
@@ -65,10 +63,10 @@ namespace REST_Interface.Controllers
 
                     Id = appointment.Id,
                     Description= appointment.Description,
-                    StartDate = appointment.StartDate,
-                    EndDate = appointment.EndDate,
+                    Start = appointment.Start,
+                    End = appointment.End,
                     Title = appointment.Title,
-                    Customer = new CustomerDto() 
+                    /*Customer = new CustomerDto() 
                     { 
                         FirstName = appointment.Customer!.FirstName,
                         E_Mail_Address = appointment.Customer.E_Mail_Address,
@@ -76,7 +74,7 @@ namespace REST_Interface.Controllers
                         PhoneNumber = appointment.Customer.PhoneNumber,
                         Id = appointment.Id,
                         
-                    },
+                    },*/
                     
 
                 });
@@ -87,9 +85,10 @@ namespace REST_Interface.Controllers
 
 
         }
-
-        [HttpPost]
-        public async Task<IActionResult> Post([FromQuery] string userName, [FromQuery] int customerId, [FromBody] AppointmentWithoutCustomerDto newAppointmentDto)
+        
+        
+        [HttpPost("/CreateAppointment")]
+        public async Task<IActionResult> Post([FromQuery] string userName, [FromQuery] int customerId, AppointmentWithoutCustomerDto newAppointmentDto)
         {
             List<ValidationResult> results = new List<ValidationResult>();
 
@@ -113,13 +112,13 @@ namespace REST_Interface.Controllers
 
 
             Appointment newAppointment = new Appointment() {
-            Description = newAppointmentDto.Description,
-            StartDate = newAppointmentDto.StartDate,
-            EndDate = newAppointmentDto.EndDate,
-            Title = newAppointmentDto.Title,
-            AllDay = newAppointmentDto.AllDay,
-            Business_Id = businessId,
-            Customer_Id = customerId,
+                Description = newAppointmentDto.Description,
+                Start = newAppointmentDto.Start,
+                End = newAppointmentDto.End,
+                Title = newAppointmentDto.Title,
+                AllDay = newAppointmentDto.AllDay,
+                Business_Id = businessId,
+                Customer_Id = customerId,
             };
 
 
@@ -155,7 +154,7 @@ namespace REST_Interface.Controllers
 
 
         }
-
+        
 
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery] int appointmentId)

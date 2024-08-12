@@ -223,8 +223,8 @@ namespace Persistence
 
             Appointment appointment = new Appointment()
             {
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now.AddDays(1),
+                Start = DateTime.Now,
+                End = DateTime.Now.AddDays(1),
                 Title = "Termin von Musterfrau",
                 Business_Id = ent.Id,
                 Customer_Id = customer.Id,

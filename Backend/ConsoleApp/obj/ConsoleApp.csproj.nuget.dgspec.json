@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj": {}
+    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj": {
+    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
-        "packagesPath": "C:\\Users\\Startklar\\.nuget\\packages\\",
-        "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\ConsoleApp\\obj\\",
+        "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Startklar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\Core.csproj"
+              "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj"
               },
-              "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -87,21 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
+    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Startklar\\.nuget\\packages\\",
-        "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\obj\\",
+        "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Startklar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -167,21 +167,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Startklar\\.nuget\\packages\\",
-        "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Startklar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -195,8 +195,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\Appoint_Me_Da\\AppointMe_DA\\Backend\\Core\\Core.csproj"
+              "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Core\\Core.csproj"
               }
             }
           }
@@ -251,7 +251,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

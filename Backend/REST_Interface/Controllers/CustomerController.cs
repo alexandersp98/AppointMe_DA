@@ -66,7 +66,6 @@ namespace REST_Interface.Controllers
                 LastName = newCustomerDto.LastName,
                 PhoneNumber = newCustomerDto.PhoneNumber,
                 Business_Id = businessId
-
             };
 
             if (!Validator.TryValidateObject(newCustomer, new ValidationContext(newCustomer), results, true))
