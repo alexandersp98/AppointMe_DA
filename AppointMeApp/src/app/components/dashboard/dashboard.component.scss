@@ -139,16 +139,6 @@ body {
   gap: 20px;
 }
 
-.appointments, .chats {
-  border: 2px solid #222222;
-  border-radius: 25px;
-  padding: 20px;
-  color: white;
-  font-size: 20px;
-  background-color: #222222;
-  width: 400px;
-}
-
 .section-title {
   font-weight: bold;
   font-size: 24px;
@@ -158,6 +148,22 @@ body {
   height: 3vh;
 }
 
-#chatInstance, #appointmentInstance{
+#chatInstance, #appointmentInstance {
   border-bottom: 1px solid #ffffffc2;
+  margin-bottom: 10px; 
+}
+
+/* Scrollbar for WebKit browsers (Chrome, Safari) */
+.appointments, .chats {
+  border: 2px solid #222222;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: #222222;
+  width: 400px;
+  height: 400px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  scrollbar-width:thin; /* Make the scrollbar thinner */
+  scrollbar-color: #555555 #222222; /* Handle color and track color */
 }

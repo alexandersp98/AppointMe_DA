@@ -1,44 +1,51 @@
-::ng-deep .mat-dialog-container {
-    background-color: #f5f5f5; /* Light grey background for the dialog */
-    border-radius: 8px; /* Optional: for rounded corners */
+
+.window {
+  color: #222222;
+  text-align: center;
+  background-color: #EAE0D4;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dialongContect {
+  background-color: #EAE0D4;
+}
+
+.title{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.description, .customerId, .start, .end{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.date-time-fields {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.date-time-fields.disabled input {
+  background-color: #e0e0e0; /* Light grey background for disabled inputs */
+  cursor: not-allowed;
+}
+
+
+button {
+  margin: 0 8px;
+}
+mat-form-field {
+  width: 100%;
+
+  mat-label {
+    font-size: 14px; /* Adjust this value to make the label smaller */
   }
-  
-  .event-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+
+  .mat-form-field-label {
+    font-size: 14px; /* Ensures consistency if label is floating */
   }
-  
-  mat-form-field {
-    width: 100%;
-  }
-  
-  .date-time-fields {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  
-  .date-time-fields.disabled input {
-    background-color: #e0e0e0; /* Light grey background for disabled inputs */
-    cursor: not-allowed;
-  }
-  
-  mat-checkbox {
-    margin-bottom: 16px;
-  }
-  
-  mat-dialog-content {
-    padding: 24px; /* Adjust padding as needed */
-  }
-  
-  mat-dialog-actions {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-  }
-  
-  button {
-    margin: 0 8px;
-  }
-  
+}
+

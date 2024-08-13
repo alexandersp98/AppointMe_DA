@@ -23,9 +23,10 @@ import { FormsModule } from '@angular/forms';
     CommonModule
   ],
   templateUrl: './event-dialog.component.html',
-  styleUrl: './event-dialog.component.scss'
+  styleUrl: './event-dialog.component.scss',
 })
 export class EventDialogComponent {
+  customers = ['John Doe', 'Jane Smith', 'Michael Brown'];
 
   constructor(
     public dialogRef: MatDialogRef<EventDialogComponent>,

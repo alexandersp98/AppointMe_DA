@@ -140,7 +140,8 @@ export class CalendarComponent implements OnInit {
           endDate.setHours(Number(hours), Number(minutes));
         }
         
-        const customerName = result.customerName; 
+        const customerId = result.customerId; 
+        console.log(customerId)
 
         const newAppointment: Appointment = {
           title: result.title,
@@ -164,7 +165,7 @@ export class CalendarComponent implements OnInit {
 
         // Send POST request to save the appointment
 
-        let params = new HttpParams().set('username', this.userName).set('customerId', customerName);
+        let params = new HttpParams().set('username', this.userName).set('customerId', customerId);
 
         const headers = new HttpHeaders()
         .append(

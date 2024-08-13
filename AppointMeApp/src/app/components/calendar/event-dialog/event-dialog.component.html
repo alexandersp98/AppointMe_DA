@@ -1,31 +1,67 @@
-<h1 mat-dialog-title>Create Event</h1>
+<div class="window">
+  <div class="dialongContect"  mat-dialog-content>
+  
+    <div class="title">
+        <mat-form-field appearance="fill">
+          <mat-label>add Title</mat-label>
+          <input matInput [(ngModel)]="data.title" name="title">
+        </mat-form-field>
+      </div>
 
-<div mat-dialog-content>
-  <form class="event-form">
-    <mat-form-field appearance="fill">
-      <mat-label>Title</mat-label>
-      <input matInput [(ngModel)]="data.title" name="title">
-    </mat-form-field>
+      <div class="description">
+        <mat-form-field appearance="fill">
+          <mat-label>add a description</mat-label>
+          <textarea matInput [(ngModel)]="data.description" name="description"></textarea>
+        </mat-form-field>
+      </div>
+      
+      <div class="customerId">
+        <mat-form-field appearance="fill">
+          <mat-label>Customer Id</mat-label>
+          <input matInput [(ngModel)]="data.customerId" name="customerId">
+        </mat-form-field>
+      </div>
+  
 
-    <mat-form-field appearance="fill">
-      <mat-label>Description</mat-label>
-      <textarea matInput [(ngModel)]="data.description" name="description"></textarea>
-    </mat-form-field>
+      <mat-checkbox [(ngModel)]="data.allDay" name="allDay">All Day</mat-checkbox>
+  
+      <div class="dateTimeFields" [ngClass]="{'disabled': data.allDay}">
+        <div class="start">
+          <mat-form-field appearance="fill">
+            <mat-label>Start Date</mat-label>
+            <input matInput [matDatepicker]="startDatePicker" [(ngModel)]="data.startDate" name="startDate">
+            <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #startDatePicker></mat-datepicker>
+          </mat-form-field>
+    
+          <mat-form-field appearance="fill">
+            <mat-label>Start Time</mat-label>
+            <input matInput placeholder="16:00"  [(ngModel)]="data.startTime" name="startTime">
+          </mat-form-field>
+        </div>
+        
+        <div class="end">
+          <mat-form-field appearance="fill">
+            <mat-label>End Date</mat-label>
+            <input matInput [matDatepicker]="endDatePicker" [(ngModel)]="data.endDate" name="endDate">
+            <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+            <mat-datepicker #endDatePicker></mat-datepicker>
+          </mat-form-field>
+    
+          <mat-form-field appearance="fill">
+            <mat-label>End Time</mat-label>
+            <input matInput  placeholder="16:00" [(ngModel)]="data.endTime" name="endTime">
+          </mat-form-field>
+        </div>
 
-    <mat-form-field appearance="fill">
-      <mat-label>Customer Name</mat-label>
-      <input matInput [(ngModel)]="data.customerName" name="customerName">
-    </mat-form-field>
-
-    <mat-checkbox [(ngModel)]="data.allDay" name="allDay">All Day</mat-checkbox>
-
-    <div class="date-time-fields" [ngClass]="{'disabled': data.allDay}">
-      <!-- Start and End Date/Time fields -->
-    </div>
-  </form>
+        
+      </div>
+  </div>
+  
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button (click)="onSubmit()">Submit</button>
+  </div>
 </div>
 
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">Cancel</button>
-  <button mat-button (click)="onSubmit()">Submit</button>
-</div>
+
