@@ -39,9 +39,7 @@ namespace REST_Interface.Controllers
                     Id = business.Id,
                     UserName = business.UserName,
                     E_Mail_Address = business.E_Mail_Address,
-                    Password = business.Password,
-                    FirstName = business.FirstName,
-                    LastName = business.LastName,
+                    Password = business.Password
                 });
 
             }
@@ -63,6 +61,13 @@ namespace REST_Interface.Controllers
 
             var business = await _uow.BusinessRepository.GetByUsernameAsync(userName);
 
+
+            if(business == null)
+            {
+                return BadRequest("this username does not exist");
+
+            }
+
             return Ok(business.Id);
         }
 
@@ -78,9 +83,7 @@ namespace REST_Interface.Controllers
             {
                 E_Mail_Address = newBusinessDto.E_Mail_Address,
                 Password = newBusinessDto.Password,
-                UserName = newBusinessDto.UserName,
-                FirstName = newBusinessDto.FirstName,
-                LastName = newBusinessDto.LastName,
+                UserName = newBusinessDto.UserName
             };
 
             if (!Validator.TryValidateObject(newBusiness, new ValidationContext(newBusiness), results, true))

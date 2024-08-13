@@ -152,21 +152,16 @@ namespace Persistence
             {
                 E_Mail_Address = "m.mustermann@gmail.net",
                 Password = "123456Ab",
-                UserName = "MusterMaxi",
-                FirstName = "Maximilian",
-                LastName = "Mustermann"
-
-
+                UserName = "MusterMaxi"
+          
             };
 
             Business ent2 = new Business()
             {
-                E_Mail_Address = "a.horvath@gmail.net",
+                E_Mail_Address = "m.mustermann2@gmail.net",
                 Password = "123456aB",
-                UserName = "horvathslos",
-                FirstName = "Anton",
-                LastName = "Horvath"
-
+                UserName ="MusterMaxi2",
+         
 
             };
 

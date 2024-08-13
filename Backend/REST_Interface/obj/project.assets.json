@@ -3290,19 +3290,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\": {}
+    "C:\\Users\\Startklar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
+      "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
       "projectName": "REST_Interface",
-      "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
-      "packagesPath": "C:\\Users\\Andreas Fuchs-Eisner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
+      "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
+      "packagesPath": "C:\\Users\\Startklar\\.nuget\\packages\\",
+      "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andreas Fuchs-Eisner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Startklar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3316,8 +3316,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\Project\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
+            "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -3365,7 +3365,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
