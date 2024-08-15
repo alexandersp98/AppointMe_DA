@@ -16,7 +16,7 @@ namespace Core.Entities
         [ForeignKey(nameof(Customer_Id))]
         public Customer? Customer { get; set; }
 
-        
+
         [ForeignKey(nameof(Business_Id))]
         public Business? Business { get; set; }
 
@@ -29,17 +29,25 @@ namespace Core.Entities
         public bool AllDay { get; set; }
 
 
-        public DateTime Start { get; set; }
+        // Need to set the time to UTC
+        private DateTime _start;
+        public DateTime Start
+        {
+            get => _start;
+            set => _start = DateTime.SpecifyKind(value, DateTimeKind.Utc);
+        }
+
+        // Need to set the time to UTC
+        private DateTime _end;
+        public DateTime End
+        {
+            get => _end;
+            set => _end = DateTime.SpecifyKind(value, DateTimeKind.Utc);
+        }
 
 
-        public DateTime End { get; set; }
-
-        
         [MaxLength(500)]
         public string Description { get; set; } = string.Empty;
 
-
-
     }
-
 }

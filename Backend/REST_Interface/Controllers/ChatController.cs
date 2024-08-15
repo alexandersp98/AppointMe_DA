@@ -32,8 +32,7 @@ namespace REST_Interface.Controllers
                     Id = chat.Id,
                     Business = new BusinessWithoutTokenDto()
                     {
-                        FirstName = chat.Business!.FirstName,
-                        LastName = chat.Business.LastName,
+                       
                         UserName = chat.Business.UserName,
                     },
 
@@ -75,8 +74,7 @@ namespace REST_Interface.Controllers
                     Id = chat.Id,
                     Business = new BusinessWithoutTokenDto()
                     {
-                        FirstName = chat.Business!.FirstName,
-                        LastName = chat.Business.LastName,
+                       
                         UserName = chat.Business.UserName,
                     },
 

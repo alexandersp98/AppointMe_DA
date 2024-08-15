@@ -5,6 +5,8 @@
   background-color: #EAE0D4;
   height: 100%;
   overflow: hidden;
+  scrollbar-width:thin; /* Make the scrollbar thinner */
+  scrollbar-color: #555555 #222222; /* Handle color and track color */
 }
 
 .dialongContect {

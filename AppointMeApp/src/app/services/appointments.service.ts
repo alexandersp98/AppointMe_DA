@@ -15,6 +15,7 @@ export class AppointmentsService {
   urlAllAppointmentsByBusinessUserName: string = environment.apiBaseUrl + 'GetAppointmentsByBusinessUserName';
   urlCreateAppointment: string = environment.apiBaseUrl + 'CreateAppointment';
   urlDeleteAppointment: string = environment.apiBaseUrl + 'Appointment';
+  urlUpdateAppointment: string = environment.apiBaseUrl + 'UpdateAppointment'; 
 
   list: Appointment[] = [];
 
@@ -42,6 +43,7 @@ export class AppointmentsService {
             const event: EventInput = {
               id: String(appointment.id),
               title: appointment.title,
+              allDay: appointment.allDay,
               start: appointment.start,
               end: appointment.end,
               extendedProps: {
@@ -49,7 +51,6 @@ export class AppointmentsService {
                 customerId: appointment.extendedProps?.customerId ?? 0
               }
             };
-            console.log(event);
             eventInputs.push(event);
           }
 
@@ -65,7 +66,6 @@ export class AppointmentsService {
   }
 
   createAppointment(appointment: any, params: HttpParams, headers: HttpHeaders): Observable<any> {
-    console.log('Creating appointment with body:', appointment); // Log the body to debug
     return this.http.post<any>(this.urlCreateAppointment, appointment, { params, headers, responseType: 'text' as 'json' });
   }
 
@@ -73,4 +73,10 @@ export class AppointmentsService {
     const params = new HttpParams().set('appointmentId', appointmentId.toString());
     return this.http.delete<void>(this.urlDeleteAppointment, { params });
   }
+
+  updateAppointment(appointment: any, params: HttpParams, headers: HttpHeaders): Observable<any> {
+    return this.http.put<any>(this.urlUpdateAppointment, appointment, { params, headers });
+  }
+  
+
 }

@@ -14,7 +14,6 @@ namespace Core.Contracts
         Task<Appointment?> GetById(int calendarId);
 
         Task<List<Appointment>> GetAppointmentsByUserName(string userName);
-        
-
+        void UpdateAppointment(Appointment existingAppointment);
     }
 }

@@ -30,11 +30,15 @@ namespace REST_Interface.Controllers
                 appointmentDtos.Add(new AppointmentDto()
                 {
                     Id = app.Id,
-                    Description = app.Description,
+                    Title = app.Title,
                     AllDay = app.AllDay,
                     Start = app.Start,
                     End = app.End,
-                    Title = app.Title
+                    ExtendedProps = new ExtendedPropsDto
+                    {
+                        Description = app.Description,
+                        CustomerId = (int)app.Customer_Id!
+                    }
                 });
 
             }
@@ -60,23 +64,16 @@ namespace REST_Interface.Controllers
             {
                 appointmentDto.Add(new AppointmentDto()
                 {
-
                     Id = appointment.Id,
-                    Description= appointment.Description,
+                    Title = appointment.Title,
+                    AllDay = appointment.AllDay,
                     Start = appointment.Start,
                     End = appointment.End,
-                    Title = appointment.Title,
-                    /*Customer = new CustomerDto() 
-                    { 
-                        FirstName = appointment.Customer!.FirstName,
-                        E_Mail_Address = appointment.Customer.E_Mail_Address,
-                        LastName = appointment.Customer.LastName,
-                        PhoneNumber = appointment.Customer.PhoneNumber,
-                        Id = appointment.Id,
-                        
-                    },*/
-                    
-
+                    ExtendedProps = new ExtendedPropsDto
+                    {
+                        Description = appointment.Description,
+                        CustomerId = (int)appointment.Customer_Id!
+                    }
                 });
 
             }
@@ -85,11 +82,13 @@ namespace REST_Interface.Controllers
 
 
         }
-        
-        
+
+
         [HttpPost("/CreateAppointment")]
-        public async Task<IActionResult> Post([FromQuery] string userName, [FromQuery] int customerId, AppointmentWithoutCustomerDto newAppointmentDto)
+        public async Task<IActionResult> Post([FromQuery] string userName, [FromQuery] int customerId, [FromBody] AppointmentWithoutCustomerDto newAppointmentDto)
         {
+
+
             List<ValidationResult> results = new List<ValidationResult>();
 
             int businessId = await _uow.BusinessRepository.GetIdPerUserNameAsync(userName);
@@ -105,14 +104,15 @@ namespace REST_Interface.Controllers
                 return BadRequest("this customer does not exist");
             }
 
-            if(!await _uow.CustomerRepository.BelongsToBusinessAsnc(customerId, businessId))
+            if (!await _uow.CustomerRepository.BelongsToBusinessAsnc(customerId, businessId))
             {
                 return BadRequest("customer does not belong to business");
             }
 
 
-            Appointment newAppointment = new Appointment() {
-                Description = newAppointmentDto.Description,
+            Appointment newAppointment = new Appointment()
+            {
+                Description = newAppointmentDto.ExtendedProps!.Description,
                 Start = newAppointmentDto.Start,
                 End = newAppointmentDto.End,
                 Title = newAppointmentDto.Title,
@@ -120,7 +120,7 @@ namespace REST_Interface.Controllers
                 Business_Id = businessId,
                 Customer_Id = customerId,
             };
-
+            System.Diagnostics.Debug.WriteLine($"Received Description: {newAppointmentDto.ExtendedProps.Description}");
 
             if (!Validator.TryValidateObject(newAppointment, new ValidationContext(newAppointment), results, true))
             {
@@ -141,6 +141,21 @@ namespace REST_Interface.Controllers
 
                 await _uow.SaveChangesAsync();
 
+                var createdAppointmentDto = new AppointmentDto
+                {
+                    Id = newAppointment.Id,
+                    Title = newAppointment.Title,
+                    AllDay = newAppointment.AllDay,
+                    Start = newAppointment.Start,
+                    End = newAppointment.End,
+                    ExtendedProps = new ExtendedPropsDto
+                    {
+                        Description = newAppointment.Description,
+                        CustomerId = newAppointment.Customer_Id.HasValue ? newAppointment.Customer_Id.Value : 0
+                    }
+                };
+
+                return Ok(createdAppointmentDto);
 
             }
             catch (ValidationException ex)
@@ -150,11 +165,8 @@ namespace REST_Interface.Controllers
 
             }
 
-            return Ok("Success");
-
-
         }
-        
+
 
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery] int appointmentId)
@@ -177,8 +189,63 @@ namespace REST_Interface.Controllers
             }
         }
 
-        
 
+        [HttpPut("/UpdateAppointment")]
+        public async Task<IActionResult> UpdateAppointment([FromQuery] int appointmentId, [FromBody] AppointmentWithoutCustomerDto updatedAppointmentDto)
+
+        {
+            if (appointmentId <= 0)
+            {
+                return BadRequest("Invalid appointment ID");
+            }
+
+            var existingAppointment = await _uow.AppointmentRepository.GetById(appointmentId);
+            if (existingAppointment == null)
+            {
+                return NotFound("Appointment not found");
+            }
+
+            existingAppointment.Title = updatedAppointmentDto.Title;
+            existingAppointment.Start = updatedAppointmentDto.Start;
+            existingAppointment.End = updatedAppointmentDto.End;
+            existingAppointment.AllDay = updatedAppointmentDto.AllDay;
+            existingAppointment.Description = updatedAppointmentDto.ExtendedProps?.Description!;
+            existingAppointment.Customer_Id = updatedAppointmentDto.ExtendedProps?.CustomerId;
+
+            // Validate the updated appointment
+            var results = new List<ValidationResult>();
+            if (!Validator.TryValidateObject(existingAppointment, new ValidationContext(existingAppointment), results, true))
+            {
+                string errorMessages = string.Join("\n", results.Select(r => r.ErrorMessage));
+                return BadRequest(errorMessages);
+            }
+
+            try
+            {
+                _uow.AppointmentRepository.UpdateAppointment(existingAppointment);
+                await _uow.SaveChangesAsync();
+
+                var newAppointmentDto = new AppointmentDto
+                {
+                    Id = existingAppointment.Id,
+                    Title = existingAppointment.Title,
+                    Start = existingAppointment.Start,
+                    End = existingAppointment.End,
+                    AllDay = existingAppointment.AllDay,
+                    ExtendedProps = new ExtendedPropsDto
+                    {
+                        Description = existingAppointment.Description,
+                        CustomerId = existingAppointment.Customer_Id.HasValue ? existingAppointment.Customer_Id.Value : 0
+                    }
+                };
+
+                return Ok(newAppointmentDto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
 
 
     }

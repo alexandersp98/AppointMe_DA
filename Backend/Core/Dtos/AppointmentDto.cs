@@ -18,14 +18,8 @@ namespace Core.Dtos
         public bool AllDay { get; set; }
         public DateTime Start { get; set; }
 
-
         public DateTime End { get; set; }
 
-        public string Description { get; set; } = string.Empty;
-
-        public int CustomerId { get; set; }
-
-
-
+        public ExtendedPropsDto? ExtendedProps { get; set; }
     }
 }

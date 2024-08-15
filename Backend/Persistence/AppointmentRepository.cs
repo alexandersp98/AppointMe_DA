@@ -43,6 +43,10 @@ namespace Persistence
             return await _context.Appointments.Where(c => c.Id == calendarId).FirstOrDefaultAsync();
         }
 
-        
+        public void UpdateAppointment(Appointment existingAppointment)
+        {
+            _context.Appointments.Attach(existingAppointment);  // Attach the appointment entity to the context
+            _context.Entry(existingAppointment).State = EntityState.Modified;  // Mark it as modified
+        }
     }
 }

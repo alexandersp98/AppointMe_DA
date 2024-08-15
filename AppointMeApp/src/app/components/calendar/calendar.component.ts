@@ -205,7 +205,7 @@ export class CalendarComponent implements OnInit {
         
         this.appointmentService.createAppointment(newAppointment, params, headers).subscribe({
           next: (response: any) => {
-            console.log('Appointment saved:', response);
+            console.log('Appointment saved successfully');
             newAppointment.id = response.id; // Updating local appointment id with the one from the backend
             
             calendarApi.addEvent({
@@ -261,19 +261,24 @@ export class CalendarComponent implements OnInit {
             startDate.setHours(Number(hours), Number(minutes));
           }
           
+        
+
           const endDate = new Date(result.endDate);
           if (result.endTime) {
             const [hours, minutes] = result.endTime.split(':');
             endDate.setHours(Number(hours), Number(minutes));
           }
+      
+          
   
           event.setProp('title', result.title);
-          event.setDates(startDate, endDate);
+          event.setStart(startDate);
+          event.setEnd(endDate);
           event.setAllDay(result.allDay);
           event.setExtendedProp('description', result.description);
           event.setExtendedProp('customerId', result.customerId);
           
-          console.log(event);
+          
           this.updateAppointment(event); // Update in the backend
         }
       }
@@ -288,28 +293,26 @@ export class CalendarComponent implements OnInit {
   //updating existing Event
   updateAppointment(event: EventApi): void {
     const updatedAppointment: Appointment = {
-      id: parseInt(event.id, 10), // Convert string id back to number if necessary
+      id: parseInt(event.id, 10),
       title: event.title,
       start: event.start as Date,
       end: event.end as Date,
+      allDay: event.allDay,
       extendedProps: {
         description: event.extendedProps['description'],
         customerId: event.extendedProps['customerId']
-      },
-      allDay: event.allDay,
-      
+      }
     };
-  
-    const headers = new HttpHeaders().append('Content-Type', 'application/json');
-    let params = new HttpParams().set('username', this.userName).set('eventId', event.id);
     
-    /*
-    this.appointmentService.updateAppointment(JSON.stringify(updatedAppointment), params, headers).subscribe({
-      next: response => console.log('Appointment updated:', response),
-      error: err => console.error('Error updating appointment:', err)
-    });*/
-  }
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    let params = new HttpParams().set('appointmentId', event.id);
+    
   
+    this.appointmentService.updateAppointment(updatedAppointment, params, headers).subscribe({
+      next: response => console.log('Appointment updated successfully '),
+      error: err => console.error('Error updating appointment:', err)
+    });
+  }
 
 
   //Deleting Event
