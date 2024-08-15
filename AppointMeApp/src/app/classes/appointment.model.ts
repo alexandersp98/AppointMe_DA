@@ -1,24 +1,27 @@
-import { Customer } from './customer.model';
-
 export class Appointment {
-
-    title: string = "";
-    start: Date = new Date();
-    end: Date = new Date();
-    description: string = "";
-    allDay: boolean = false;
+    id: any;
+    title: string;
+    allDay: boolean;
+    start: Date;
+    end: Date;
+    extendedProps?: { // Make sure this matches the structure
+        description?: string;
+        customerId?: number;
+      };
 
     constructor(
+        Id: any,
         Title: string,
         AllDay: boolean,
         Start: Date,
         End: Date,
-        Description: string,
+        extendedProps?: { description?: string, customerId?: number }
     ) {
+        this.id = Id;
         this.title = Title;
         this.allDay = AllDay;
         this.start = Start;
         this.end = End;
-        this.description = Description;
+        this.extendedProps = extendedProps;
     }
 }

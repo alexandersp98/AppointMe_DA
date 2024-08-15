@@ -37,7 +37,7 @@
           <p class="section-title">Appointments</p>
           <div id="appointmentInstance" *ngFor="let appointment of appointmentService.list">
             <p>Title: {{appointment.title}}</p>
-            <p>Description: {{appointment.description}}</p>
+            <p>Description: {{appointment.extendedProps?.description}}</p>
             <p>All Day: {{appointment.allDay}}</p>
             <p>Start: {{appointment.start}}</p>
             <p>End: {{appointment.end}}</p>

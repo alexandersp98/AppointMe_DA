@@ -1,11 +1,11 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -13,30 +13,30 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-event-dialog',
   standalone: true,
   imports: [
+    CommonModule,
     FormsModule,
+    MatDialogModule,
+    MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
     MatDatepickerModule,
-    MatNativeDateModule,
-    MatButtonModule,
-    CommonModule
+    MatNativeDateModule
   ],
   templateUrl: './event-dialog.component.html',
   styleUrl: './event-dialog.component.scss',
 })
 export class EventDialogComponent {
-  customers = ['John Doe', 'Jane Smith', 'Michael Brown'];
-
   constructor(
     public dialogRef: MatDialogRef<EventDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
-
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {}
 
   onSubmit(): void {
     this.dialogRef.close(this.data);
+  }
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 }

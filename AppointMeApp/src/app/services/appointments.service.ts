@@ -14,6 +14,8 @@ export class AppointmentsService {
 
   urlAllAppointmentsByBusinessUserName: string = environment.apiBaseUrl + 'GetAppointmentsByBusinessUserName';
   urlCreateAppointment: string = environment.apiBaseUrl + 'CreateAppointment';
+  urlDeleteAppointment: string = environment.apiBaseUrl + 'Appointment';
+
   list: Appointment[] = [];
 
   refreshList(params: any){
@@ -22,7 +24,6 @@ export class AppointmentsService {
       next: res =>
         {
           this.list = res as Appointment[];
-          console.log(res);
         },
       error: err => {console.log(err)}
     })
@@ -34,21 +35,24 @@ export class AppointmentsService {
       .subscribe({
         next: res => {
           const appointments = res as Appointment[];
+         
           const eventInputs: EventInput[] = [];
 
-          console.log('Appointments received:', appointments.length); // Will log the correct length
-
-          for (let i = 0; i < appointments.length; i++) {
+          for (const appointment of appointments) {
             const event: EventInput = {
-              title: appointments[i].title,
-              start: appointments[i].start,  
-              end: appointments[i].end
+              id: String(appointment.id),
+              title: appointment.title,
+              start: appointment.start,
+              end: appointment.end,
+              extendedProps: {
+                description: appointment.extendedProps?.description ?? 'No description',
+                customerId: appointment.extendedProps?.customerId ?? 0
+              }
             };
+            console.log(event);
             eventInputs.push(event);
-            
           }
 
-          console.log('EventInputs created:', eventInputs.length); // Will log the created EventInputs length
           observer.next(eventInputs);
           observer.complete();
         },
@@ -61,6 +65,12 @@ export class AppointmentsService {
   }
 
   createAppointment(appointment: any, params: HttpParams, headers: HttpHeaders): Observable<any> {
+    console.log('Creating appointment with body:', appointment); // Log the body to debug
     return this.http.post<any>(this.urlCreateAppointment, appointment, { params, headers, responseType: 'text' as 'json' });
+  }
+
+  deleteAppointment(appointmentId: number): Observable<void> {
+    const params = new HttpParams().set('appointmentId', appointmentId.toString());
+    return this.http.delete<void>(this.urlDeleteAppointment, { params });
   }
 }
