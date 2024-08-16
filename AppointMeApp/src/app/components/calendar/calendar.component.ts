@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit, signal, ViewChild } from '@angular/core';
 import { FullCalendarComponent, FullCalendarModule } from '@fullcalendar/angular'; // Import FullCalendarComponent
-import { CalendarOptions, EventApi, EventClickArg, EventInput } from '@fullcalendar/core';
+import { CalendarOptions, DateInput, EventApi, EventClickArg, EventInput } from '@fullcalendar/core';
 import { MatDialog } from '@angular/material/dialog';
 import { EventDialogComponent } from './event-dialog/event-dialog.component';
 
@@ -138,40 +138,23 @@ export class CalendarComponent implements OnInit {
           const [hours, minutes] = result.startTime.split(':');
           startDate.setHours(Number(hours), Number(minutes));
         }
-        
-        // Convert startDate to UTC by creating a new Date object with the same timestamp but in UTC
-        const startUTC = new Date(Date.UTC(
-          startDate.getUTCFullYear(),
-          startDate.getUTCMonth(),
-          startDate.getUTCDate(),
-          startDate.getUTCHours(),
-          startDate.getUTCMinutes(),
-          startDate.getUTCSeconds()
-        ));
-
+  
         const endDate = new Date(result.endDate);
         if (result.endTime) {
           const [hours, minutes] = result.endTime.split(':');
           endDate.setHours(Number(hours), Number(minutes));
         }
         
-        // Convert endDate to UTC similarly
-        const endUTC = new Date(Date.UTC(
-          endDate.getUTCFullYear(),
-          endDate.getUTCMonth(),
-          endDate.getUTCDate(),
-          endDate.getUTCHours(),
-          endDate.getUTCMinutes(),
-          endDate.getUTCSeconds()
-        ));
-
+        console.log(startDate);
+        console.log(endDate);
         const customerId = result.customerId; 
+
 
         const newAppointment: Appointment = {
           id: 0,
           title: result.title,
-          start: startUTC,
-          end: endUTC,
+          start: startDate,
+          end: endDate,
           allDay: result.allDay,
           extendedProps: {
             description: result.description || '',  // Ensure description is not undefined
@@ -179,19 +162,6 @@ export class CalendarComponent implements OnInit {
           },
         };
         
-        //adding the Event to the eventlist
-        calendarApi.addEvent({
-          title: newAppointment.title,
-          start: newAppointment.start,
-          end: newAppointment.end,
-          extendedProps: {
-            description: newAppointment.extendedProps?.description,
-            customerId: result.customerId
-          },
-          allDay: newAppointment.allDay
-        });
-      
-
         // Send POST request to save the appointment
         let params = new HttpParams().set('username', this.userName).set('customerId', customerId);
 
@@ -231,7 +201,8 @@ export class CalendarComponent implements OnInit {
   //clicking on events
   handleEventClick(clickInfo: EventClickArg) {
     const event = clickInfo.event;
-    
+    console.log(event.start)
+    console.log(event.end)
     const dialogRef = this.dialog.open(EventDialogComponent, {
       width: '400px',
       data: {
@@ -278,7 +249,7 @@ export class CalendarComponent implements OnInit {
           event.setExtendedProp('description', result.description);
           event.setExtendedProp('customerId', result.customerId);
           
-          
+          console.log(event);
           this.updateAppointment(event); // Update in the backend
         }
       }
@@ -289,7 +260,29 @@ export class CalendarComponent implements OnInit {
   private formatTime(date: Date): string {
     return date.toTimeString().slice(0, 5);
   }
+
+  convertUtcToLocal(utcDate: DateInput | undefined): Date | undefined {
+    if (!utcDate) {
+      return undefined;
+    }
   
+    let date: Date;
+  
+    if (utcDate instanceof Date) {
+      date = utcDate;
+    } else if (typeof utcDate === 'string' || typeof utcDate === 'number') {
+      date = new Date(utcDate);
+    } else if (Array.isArray(utcDate)) {
+      // If utcDate is a number array, treat it as [year, month, day, hour, minute, second]
+      const [year, month, day, hour = 0, minute = 0, second = 0] = utcDate;
+      date = new Date(year, month - 1, day, hour, minute, second);
+    } else {
+      throw new Error('Invalid date format');
+    }
+  
+    return new Date(date.getTime() - date.getTimezoneOffset() * 60000);
+  }
+
   //updating existing Event
   updateAppointment(event: EventApi): void {
     const updatedAppointment: Appointment = {
