@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\",
+  "WorkspaceRootPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\rest_interface\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\rest_interface\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58B028FC-A9D9-44BB-81DA-0692DA6782D5}|REST_Interface\\REST_Interface.csproj|solutionrelative:rest_interface\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\core\\dtos\\extendedpropsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\extendedpropsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\extendedpropsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\core\\dtos\\appointmentwithoutcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\appointmentwithoutcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\appointmentwithoutcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\core\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\users\\andreas fuchs-eisner\\desktop\\htl\\diplom\\project\\appointme_da\\backend\\core\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|c:\\mein_privater_ordner\\schule\\diplom\\appointme_da\\backend\\core\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9CC4960-6165-4443-B736-ADB6F41503E6}|Core\\Core.csproj|solutionrelative:core\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,17 +33,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 92,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\AppointmentController.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\AppointmentController.cs",
               "RelativeDocumentMoniker": "REST_Interface\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\Controllers\\AppointmentController.cs",
               "RelativeToolTip": "REST_Interface\\Controllers\\AppointmentController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowOAAAAA8AAAA",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAAANoAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T11:32:43.779Z",
               "EditorCaption": ""
@@ -52,53 +56,49 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ExtendedPropsDto.cs",
-              "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Dtos\\ExtendedPropsDto.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\ExtendedPropsDto.cs",
               "RelativeDocumentMoniker": "Core\\Dtos\\ExtendedPropsDto.cs",
-              "ToolTip": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Dtos\\ExtendedPropsDto.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\ExtendedPropsDto.cs",
               "RelativeToolTip": "Core\\Dtos\\ExtendedPropsDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T11:31:29.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T11:31:29.427Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AppointmentWithoutCustomerDto.cs",
-              "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentWithoutCustomerDto.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentWithoutCustomerDto.cs",
               "RelativeDocumentMoniker": "Core\\Dtos\\AppointmentWithoutCustomerDto.cs",
-              "ToolTip": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentWithoutCustomerDto.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentWithoutCustomerDto.cs",
               "RelativeToolTip": "Core\\Dtos\\AppointmentWithoutCustomerDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T11:31:13.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T11:31:13.158Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AppointmentDto.cs",
-              "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentDto.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentDto.cs",
               "RelativeDocumentMoniker": "Core\\Dtos\\AppointmentDto.cs",
-              "ToolTip": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentDto.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Dtos\\AppointmentDto.cs",
               "RelativeToolTip": "Core\\Dtos\\AppointmentDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T11:30:45.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T11:30:45.72Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Appointment.cs",
-              "DocumentMoniker": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Entities\\Appointment.cs",
+              "DocumentMoniker": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Appointment.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\Appointment.cs",
-              "ToolTip": "C:\\Users\\Andreas Fuchs-Eisner\\Desktop\\HTL\\Diplom\\project\\AppointMe_DA\\Backend\\Core\\Entities\\Appointment.cs",
+              "ToolTip": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Entities\\Appointment.cs",
               "RelativeToolTip": "Core\\Entities\\Appointment.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwCMAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T11:10:03.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T11:10:03.628Z"
             },
             {
               "$type": "Document",
@@ -107,8 +107,35 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AppointMeDb/True/SqlTable/dbo.Appointments.sql",
               "ToolTip": "dbo.Appointments [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-16T10:28:06.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T10:28:06.17Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 51,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 92,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

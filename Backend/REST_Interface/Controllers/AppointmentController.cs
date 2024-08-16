@@ -216,7 +216,7 @@ namespace REST_Interface.Controllers
             var results = new List<ValidationResult>();
             if (!Validator.TryValidateObject(existingAppointment, new ValidationContext(existingAppointment), results, true))
             {
-                string errorMessages = string.Join("\n", results.Select(r => r.ErrorMessage));
+                string errorMessages = string.Join("\n", results.Select(r => r.ErrorMessage));            
                 return BadRequest(errorMessages);
             }
 
