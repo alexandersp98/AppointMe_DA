@@ -13,6 +13,6 @@ namespace Core.Contracts
 
         Task<FormularObject?> GetById(int formularObjectId);
 
-
+        Task<List<FormularObject>> GetByBusiness(string businessUserName);
     }
 }

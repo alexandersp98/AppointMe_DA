@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sl0jxin7dKkCND5/Fv4uryG7kdsmlYld85wAIYZ+jCORBKq8WgCaaX7JhO85j0IHuxVMy1m132HQu+skKlh70g==",
+  "dgSpecHash": "6liGdOCTYvkEj6XJwKpky+Fu1kVMfiMpC9L3XPcaHYBad7ocCyUrmzLYzH6RlhCiSG1VJOSuxVLu/kEedptLhg==",
   "success": true,
-  "projectFilePath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Startklar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Startklar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

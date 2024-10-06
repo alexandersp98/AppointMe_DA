@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zsjac18oTWlJiCxW4AodpFhsERLFyWtMuPIQfH97BNJ9q17EMW965rHSNwwbW0LT+Au9dfhoANCINeUuNNqrgQ==",
+  "dgSpecHash": "22eY5FKgumd1I+0t/Zv0lsRfrYFz0d9YryFppD7zlgqVKHLuqj8Tq3DIekYnbGNQQi8YnnMv4ainuwpDl5fqcg==",
   "success": true,
-  "projectFilePath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
+  "projectFilePath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Startklar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Startklar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

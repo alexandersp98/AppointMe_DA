@@ -3295,11 +3295,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
+      "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
       "projectName": "REST_Interface",
-      "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
+      "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\REST_Interface\\REST_Interface.csproj",
       "packagesPath": "C:\\Users\\Startklar\\.nuget\\packages\\",
-      "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
+      "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\REST_Interface\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Startklar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3316,8 +3316,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
+            "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\Persistence\\Persistence.csproj"
             }
           }
         }

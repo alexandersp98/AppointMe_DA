@@ -1,32 +1,6 @@
 [
   {
     "ContainingType": "REST_Interface.Controllers.AppointmentController",
-    "Method": "Post",
-    "RelativePath": "Appointment",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "customerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "newAppointmentDto",
-        "Type": "Core.Dtos.AppointmentWithoutCustomerDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "REST_Interface.Controllers.AppointmentController",
     "Method": "Delete",
     "RelativePath": "Appointment",
     "HttpMethod": "DELETE",
@@ -95,27 +69,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "REST_Interface.Controllers.BusinessController",
-    "Method": "Get",
-    "RelativePath": "BusinessLoginCheck",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "REST_Interface.Controllers.ChatController",
     "Method": "Post",
     "RelativePath": "Chat",
@@ -153,6 +106,53 @@
         "Name": "deleteCascade",
         "Type": "System.Boolean",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.AppointmentController",
+    "Method": "Post",
+    "RelativePath": "CreateAppointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "newAppointmentDto",
+        "Type": "Core.Dtos.AppointmentWithoutCustomerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.FormularObjectController",
+    "Method": "Post",
+    "RelativePath": "CreateFormular",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "newFormularDto",
+        "Type": "Core.Dtos.FormularObjectDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -200,6 +200,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "REST_Interface.Controllers.FormularObjectController",
+    "Method": "Delete",
+    "RelativePath": "FormularObject",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formularId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "REST_Interface.Controllers.AppointmentController",
     "Method": "Get",
     "RelativePath": "GetAllAppointments",
@@ -240,6 +256,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "REST_Interface.Controllers.FormularObjectController",
+    "Method": "Get",
+    "RelativePath": "GetAllFormulars",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "REST_Interface.Controllers.MessageController",
     "Method": "Get",
     "RelativePath": "GetAllMessages",
@@ -253,6 +279,22 @@
     "ContainingType": "REST_Interface.Controllers.AppointmentController",
     "Method": "Get",
     "RelativePath": "GetAppointmentsByBusinessUserName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.BusinessController",
+    "Method": "Get",
+    "RelativePath": "GetBusinessIdByUsername",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -298,6 +340,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "REST_Interface.Controllers.FormularObjectController",
+    "Method": "Get",
+    "RelativePath": "GetFormularsByBusiness",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "businessUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "REST_Interface.Controllers.MessageController",
     "Method": "Post",
     "RelativePath": "Message",
@@ -325,6 +383,27 @@
         "Name": "messageId",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_Interface.Controllers.AppointmentController",
+    "Method": "UpdateAppointment",
+    "RelativePath": "UpdateAppointment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatedAppointmentDto",
+        "Type": "Core.Dtos.AppointmentWithoutCustomerDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -286,8 +286,24 @@ namespace Persistence
                 throw new Exception();
             }
 
-            
-            
+            FormularObject formularObject = new FormularObject()
+            {
+                Business_Id = ent.Id,
+                Email_AdressField = 1,
+                FirstNameField = 2,
+                LastNameField = 3,
+                ResidenceField = 4,
+                StreetField = 5,
+                HouseNrField = 6,
+                PhoneNumberField = 7,
+                
+            };
+
+            FormularObjectRepository.Add(formularObject);
+
+            await SaveChangesAsync();
+
+
         }
     }
 

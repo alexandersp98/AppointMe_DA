@@ -4414,11 +4414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\Core.csproj",
+      "projectPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\Startklar\\.nuget\\packages\\",
-      "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe_DA\\Backend\\Core\\obj\\",
+      "outputPath": "C:\\Mein_privater_Ordner\\Schule\\Diplom\\AppointMe\\AppointMe_DA\\Backend\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Startklar\\AppData\\Roaming\\NuGet\\NuGet.Config",

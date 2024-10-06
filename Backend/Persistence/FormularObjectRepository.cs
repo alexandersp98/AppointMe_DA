@@ -1,5 +1,6 @@
 ﻿using Core.Contracts;
 using Core.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence
 {
@@ -18,22 +19,33 @@ namespace Persistence
 
         public void Add(FormularObject formularObject)
         {
-            _context.Add(formularObject);
+            _context.FormularObjects.Add(formularObject);
         }
 
         public void Delete(FormularObject formularObject)
         {
-            throw new NotImplementedException();
+            _context.FormularObjects.Remove(formularObject);
         }
 
-        public Task<List<FormularObject>> GetAllAsync()
+        public async Task<List<FormularObject>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.FormularObjects.OrderBy(fo => fo.Business_Id)
+                .ToListAsync();
         }
 
-        public Task<FormularObject?> GetById(int formularObjectId)
+
+        public async Task<List<FormularObject>> GetByBusiness(string businessUserName)
         {
-            throw new NotImplementedException();
+            return await _context.FormularObjects.Where(fo => fo.Business!.UserName == businessUserName)
+                .ToListAsync();
         }
+
+        public async Task<FormularObject?> GetById(int formularObjectId)
+        {
+            return await _context.FormularObjects.Where(fo => fo.Id ==  formularObjectId)
+                .FirstOrDefaultAsync();
+        }
+
+        
     }
 }
