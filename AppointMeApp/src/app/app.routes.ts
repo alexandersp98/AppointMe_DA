@@ -7,6 +7,7 @@ import { ResetPasswordComponent } from './components/reset-password/reset-passwo
 import { CreateAccountComponent } from './components/create-account/create-account.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { authGuard } from './guards/auth.guard';
+import { ChatComponent } from './components/chat/chat.component';
 
 export const routes: Routes = [
     {
@@ -48,5 +49,10 @@ export const routes: Routes = [
         path: 'dashboard',
         component: DashboardComponent, canActivate: [authGuard]
     },
+
+    {
+      path: 'chat',
+      component: ChatComponent
+    }
 
 ];
